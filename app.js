@@ -10,6 +10,9 @@
     btn.textContent = l === 'ja' ? 'EN' : '日本語';
     document.title = l === 'ja' ? 'TRI-ELEMENTS 三属の戦記｜ブラウザで遊べる無料カードバトル' : 'TRI-ELEMENTS: Chronicle of the Three — a free browser card battle game';
     try { localStorage.setItem('te-site-lang', l); } catch (e) {}
+    // 遊ぶボタン：日本語は PLiCy、英語は itch.io（どちらも同じ最新版）
+    var url = l === 'ja' ? 'https://plicy.net/GamePlay/237147' : 'https://chicken-ball.itch.io/tri-elements';
+    ['playmain', 'playtop'].forEach(function (id) { var a = document.getElementById(id); if (a) a.href = url; });
     renderAll();
   }
   btn.addEventListener('click', function () { applyLang(lang === 'ja' ? 'en' : 'ja'); });
