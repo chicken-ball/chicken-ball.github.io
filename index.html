@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TRI-ELEMENTS 三属の戦記｜ブラウザで遊べる無料カードバトル</title>
+<meta name="description" content="炎・水・草の三属性で戦う、ブラウザで遊べる無料カードバトルゲーム。PC・スマホ対応、登録不要。A free browser card battle game with three elements.">
+<meta property="og:title" content="TRI-ELEMENTS 三属の戦記">
+<meta property="og:description" content="炎は草に、草は水に、水は炎に強い。ブラウザで遊べる無料カードバトル。">
+<meta property="og:image" content="assets/og.jpg">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0b0d16">
+<link rel="icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <a class="brand" href="#">
+    <img src="favicon.png" alt="" width="28" height="28">
+    <span>TRI-ELEMENTS</span>
+  </a>
+  <nav class="menu" id="menu">
+    <a href="#how"><span lang="ja">遊び方</span><span lang="en">How to play</span></a>
+    <a href="#modes"><span lang="ja">モード</span><span lang="en">Modes</span></a>
+    <a href="#rivals"><span lang="ja">ライバル</span><span lang="en">Rivals</span></a>
+    <a href="#cards"><span lang="ja">カード</span><span lang="en">Cards</span></a>
+    <a href="#updates"><span lang="ja">更新履歴</span><span lang="en">Updates</span></a>
+    <a href="#voice"><span lang="ja">声を届ける</span><span lang="en">Feedback</span></a>
+  </nav>
+  <div class="tools">
+    <button class="lang" id="langbtn" type="button" aria-label="Language">EN</button>
+    <a class="play small" href="https://chicken-ball.itch.io/tri-elements" target="_blank" rel="noopener"><span lang="ja">遊ぶ</span><span lang="en">Play</span></a>
+  </div>
+</header>
+
+<!-- ===== ヒーロー ===== -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-in">
+    <img class="logo" src="assets/title-logo.svg" alt="TRI-ELEMENTS 三属の戦記" lang="ja" width="520" height="184">
+    <img class="logo" src="assets/title-logo-en.svg" alt="TRI-ELEMENTS: Chronicle of the Three" lang="en" width="520" height="184">
+    <p class="lead" lang="ja">炎は草に、草は水に、水は炎に強い。<br>三つの力で戦う、ブラウザで遊べる無料カードバトル。</p>
+    <p class="lead" lang="en">Fire beats Grass. Grass beats Water. Water beats Fire.<br>A free card battle game, right in your browser.</p>
+    <div class="cta">
+      <a class="play" href="https://chicken-ball.itch.io/tri-elements" target="_blank" rel="noopener">
+        <span lang="ja">ブラウザで遊ぶ</span><span lang="en">Play in browser</span>
+      </a>
+      <a class="ghost" href="#where"><span lang="ja">ほかの遊べる場所</span><span lang="en">Other places to play</span></a>
+    </div>
+    <ul class="badges">
+      <li lang="ja">無料</li><li lang="en">Free</li>
+      <li lang="ja">登録不要</li><li lang="en">No sign-up</li>
+      <li lang="ja">PC・スマホ</li><li lang="en">PC &amp; mobile</li>
+      <li lang="ja">日本語／英語</li><li lang="en">EN / JA</li>
+      <li lang="ja">広告なし</li><li lang="en">No ads</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===== 動画 ===== -->
+<section class="video">
+  <div class="wrap">
+    <div class="yt" id="yt" data-id="D_M2Em2y4sg">
+      <img src="assets/shots/ja-02-battle.webp" alt="" loading="lazy">
+      <button type="button" aria-label="Play trailer"><i></i></button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 遊び方 ===== -->
+<section id="how" class="how">
+  <div class="wrap">
+    <h2><span lang="ja">3つのルールで、遊べます</span><span lang="en">Three rules, and you're playing</span></h2>
+    <div class="rules">
+      <article>
+        <svg class="tri" viewBox="0 0 120 110" aria-hidden="true">
+          <path d="M60 14 L104 92 L16 92 Z" fill="none" stroke="#5a6478" stroke-width="2"/>
+          <circle cx="60" cy="14" r="13" fill="#e0703a"/><circle cx="104" cy="92" r="13" fill="#4cc15a"/><circle cx="16" cy="92" r="13" fill="#3aa0e0"/>
+          <text x="60" y="19" text-anchor="middle" font-size="12" fill="#fff" font-weight="900">炎</text>
+          <text x="104" y="97" text-anchor="middle" font-size="12" fill="#fff" font-weight="900">草</text>
+          <text x="16" y="97" text-anchor="middle" font-size="12" fill="#fff" font-weight="900">水</text>
+          <path d="M72 30 L94 70" stroke="#e0703a" stroke-width="3" marker-end="url(#ar)"/>
+          <path d="M88 92 L32 92" stroke="#4cc15a" stroke-width="3" marker-end="url(#ar)"/>
+          <path d="M26 70 L48 30" stroke="#3aa0e0" stroke-width="3" marker-end="url(#ar)"/>
+          <defs><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#cbd3e1"/></marker></defs>
+        </svg>
+        <h3><span lang="ja">属性の相性</span><span lang="en">Elements</span></h3>
+        <p lang="ja">有利な属性で攻撃すると、攻撃力+2。相手の色を見て、誰を出すか決めます。</p>
+        <p lang="en">Attack with the advantaged element for +2 ATK. Read the enemy's colors before you play.</p>
+      </article>
+      <article>
+        <div class="mode-pic"><span class="card-atk">⚔</span><span class="card-def">🛡</span></div>
+        <h3><span lang="ja">攻めるか、守るか</span><span lang="en">Attack or defend</span></h3>
+        <p lang="ja">モンスターは攻撃モードか防御モード。殴り合いで勝てない相手には、横に倒して受け止めます。</p>
+        <p lang="en">Every monster is in Attack or Defense Mode. Can't win the fight? Turn it sideways and absorb the hit.</p>
+      </article>
+      <article>
+        <div class="mode-pic slots"><i></i><i class="mid"></i><i></i></div>
+        <h3><span lang="ja">並び順が勝敗を分ける</span><span lang="en">Where you stand matters</span></h3>
+        <p lang="ja">場は3枠だけ。隣に誰がいるかで強さが変わるカードで、陣形を組み立てます。</p>
+        <p lang="en">Only three slots. Some cards grow stronger depending on who stands beside them — build your formation.</p>
+      </article>
+    </div>
+    <p class="note" lang="ja">最初の対戦が、遊び方を教えてくれます。説明書は要りません。</p>
+    <p class="note" lang="en">The first battle teaches you how to play. No manual needed.</p>
+  </div>
+</section>
+
+<!-- ===== モード ===== -->
+<section id="modes" class="modes">
+  <div class="wrap">
+    <h2><span lang="ja">遊べるモード</span><span lang="en">Ways to play</span></h2>
+    <div class="grid modes-grid">
+      <article><img src="assets/icons/icon_adventure.webp" alt="" loading="lazy"><h3><span lang="ja">冒険</span><span lang="en">Adventure</span></h3><p lang="ja">9つのエリア、27人のライバル。それぞれが自分のデッキと戦い方を持っています。勝つとパックがもらえます。</p><p lang="en">Nine lands, 27 rivals, each with their own deck and style. Win to earn card packs.</p></article>
+      <article><img src="assets/icons/icon_freebattle.webp" alt="" loading="lazy"><h3><span lang="ja">フリーバトル</span><span lang="en">Free Battle</span></h3><p lang="ja">好きな相手と、3段階の難しさで。「極」で5回勝つと、そのキャラクターのカードが手に入ります。</p><p lang="en">Any rival, three difficulties. Beat one five times on Extreme to earn their character card.</p></article>
+      <article><img src="assets/icons/icon_draft.webp" alt="" loading="lazy"><h3><span lang="ja">選定の儀</span><span lang="en">Rite of Choosing</span></h3><p lang="ja">2枚1組から1枚を選んでその場でデッキを組み、5人と連戦。持っていないカードも使えます。</p><p lang="en">Draft a deck from pairs on the spot and fight five rivals in a row — even with cards you don't own.</p></article>
+      <article><img src="assets/icons/icon_draft.webp" alt="" loading="lazy"><h3><span lang="ja">今日の選定の儀</span><span lang="en">Daily Rite</span></h3><p lang="ja">毎日、全員が同じカード・同じ相手。その日の最高点でランキング。水曜と土曜は特別ルールの日で、3位までに絵違いカードの景品。</p><p lang="en">Everyone gets the same cards and rivals each day. Compete on the ranking. Wednesdays and Saturdays are special rule days — the top 3 win an alternate-art card.</p></article>
+      <article><img src="assets/icons/icon_collection.webp" alt="" loading="lazy"><h3><span lang="ja">図鑑とデッキ</span><span lang="en">Library &amp; decks</span></h3><p lang="ja">全182種のカードと、隠しキャラクターカード27種。デッキは8つまで保存できます。</p><p lang="en">182 cards plus 27 hidden character cards. Save up to eight decks.</p></article>
+      <article><img src="assets/icons/icon_deck.webp" alt="" loading="lazy"><h3><span lang="ja">セーブの心配なし</span><span lang="en">Your save is safe</span></h3><p lang="ja">進行は自動で保存され、バックアップも自動。ブラウザのデータを消しても、復元コードで元に戻せます。</p><p lang="en">Progress saves automatically and is backed up. Clear your browser by mistake? A recovery code brings it all back.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ライバル ===== -->
+<section id="rivals" class="rivals">
+  <div class="wrap">
+    <h2><span lang="ja">27人のライバル</span><span lang="en">27 rivals</span></h2>
+    <p class="sub" lang="ja">草原の見習いから、星の王座に座る者まで。誰もが自分のデッキで待っています。</p>
+    <p class="sub" lang="en">From a meadow apprentice to the one on the star throne — every one of them waits with a deck of their own.</p>
+    <div id="rivalgrid" class="rivalgrid"></div>
+  </div>
+</section>
+
+<!-- ===== カード ===== -->
+<section id="cards" class="cards">
+  <div class="wrap">
+    <h2><span lang="ja">カード</span><span lang="en">The cards</span></h2>
+    <p class="sub" lang="ja">第1弾から第5弾まで、全182種。パックを開けて集め、30枚のデッキを組みます。</p>
+    <p class="sub" lang="en">182 cards across five sets. Open packs, collect them, and build your 30-card deck.</p>
+    <div id="cardgrid" class="cardgrid"></div>
+    <div class="alt">
+      <div class="alt-pics">
+        <img src="assets/alt/f03.webp" alt="" loading="lazy"><img src="assets/alt/w03.webp" alt="" loading="lazy"><img src="assets/alt/g07.webp" alt="" loading="lazy">
+      </div>
+      <div class="alt-text">
+        <h3><span lang="ja">絵違いカード</span><span lang="en">Alternate-art cards</span></h3>
+        <p lang="ja">背景まで描いた特別なイラストのカード。「今日の選定の儀」の特別ルールの日（水・土）に、ランキング3位までに入った人へ1枚ずつ。</p>
+        <p lang="en">Special full-illustration versions of familiar cards. Awarded to the top 3 of the Daily Rite on special rule days (Wed &amp; Sat).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== スクリーンショット ===== -->
+<section class="shots">
+  <div class="wrap">
+    <h2><span lang="ja">画面</span><span lang="en">Screens</span></h2>
+    <div class="shotrow" id="shotrow"></div>
+  </div>
+</section>
+
+<!-- ===== 遊べる場所 ===== -->
+<section id="where" class="where">
+  <div class="wrap">
+    <h2><span lang="ja">遊べる場所</span><span lang="en">Where to play</span></h2>
+    <div class="places">
+      <a href="https://chicken-ball.itch.io/tri-elements" target="_blank" rel="noopener"><b>itch.io</b><span lang="ja">日本語／英語。更新がいちばん早い</span><span lang="en">EN / JA. Updated first</span></a>
+      <a href="https://plicy.net/" target="_blank" rel="noopener" id="plicylink"><b>PLiCy</b><span lang="ja">日本のフリーゲーム投稿サイト</span><span lang="en">Japanese free-game site</span></a>
+      <a href="https://freegame-mugen.jp/browser/game_15439.html" target="_blank" rel="noopener"><b><span lang="ja">フリーゲーム夢現</span><span lang="en">Freegame Mugen</span></b><span lang="ja">紹介ページとレビュー</span><span lang="en">Listing &amp; reviews (JA)</span></a>
+      <a href="https://www.youtube.com/channel/UCMPZ3TIDnj241pJzRtJsGNg" target="_blank" rel="noopener"><b>YouTube</b><span lang="ja">紹介動画</span><span lang="en">Trailers</span></a>
+    </div>
+    <p class="note" lang="ja">セーブは遊んだ場所ごとに別です。別の場所へ移るときは、設定→データの「引き継ぎコード」を使ってください。</p>
+    <p class="note" lang="en">Saves are separate per site. Use the transfer code in Settings → Data to move between them.</p>
+  </div>
+</section>
+
+<!-- ===== 更新履歴 ===== -->
+<section id="updates" class="updates">
+  <div class="wrap">
+    <h2><span lang="ja">更新履歴</span><span lang="en">Updates</span></h2>
+    <ol class="timeline" id="timeline"></ol>
+  </div>
+</section>
+
+<!-- ===== 声を届ける ===== -->
+<section id="voice" class="voice">
+  <div class="wrap narrow">
+    <h2><span lang="ja">声を届ける</span><span lang="en">Send a word</span></h2>
+    <p lang="ja">このゲームは、ひとりで作っています。「ここが難しかった」「このカードが好き」「ここが変」——ひとことで十分です。返事はできないことが多いですが、ぜんぶ読みます。</p>
+    <p lang="en">This game is made by one person. "This part was too hard", "I love this card", "this looks broken" — a single line is plenty. I may not be able to reply, but I read everything.</p>
+    <form id="voiceform" novalidate>
+      <label><span lang="ja">名前（任意）</span><span lang="en">Name (optional)</span><input type="text" name="name" maxlength="40" autocomplete="nickname"></label>
+      <label><span lang="ja">内容</span><span lang="en">Message</span><textarea name="msg" maxlength="2000" rows="5" required></textarea></label>
+      <input type="text" name="hp" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <div class="formrow">
+        <button class="play" type="submit"><span lang="ja">送る</span><span lang="en">Send</span></button>
+        <span class="formmsg" id="formmsg" aria-live="polite"></span>
+      </div>
+      <p class="tiny" lang="ja">名前と内容だけが作者に届きます。メールアドレスや端末の情報は送られません。</p>
+      <p class="tiny" lang="en">Only your name and message are sent. No email address or device data.</p>
+    </form>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="credits">
+      <p><b>TRI-ELEMENTS 三属の戦記</b> — <span lang="ja">企画・制作</span><span lang="en">Made by</span> Chicken-Ball</p>
+      <p lang="ja">カードとキャラクターのイラストにはAI生成画像を使い、人の手で選定・修正しています。音楽は制作者が許諾を得て使用しています。</p>
+      <p lang="en">Card and character illustrations use AI-generated images, curated and retouched by hand. Music is used with permission.</p>
+      <p lang="ja">ゲームは、難しさとカードの調整のために匿名の遊び方データ（どこまで進んだか・対戦の結果・使ったデッキ）を送ります。名前は送りません。ゲーム内の設定でいつでも止められます。</p>
+      <p lang="en">The game sends anonymous play statistics (progress, battle results, decks used) to tune the balance. No names are sent. You can turn it off in the game's settings at any time.</p>
+    </div>
+    <p class="copy">© 2026 Chicken-Ball</p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
