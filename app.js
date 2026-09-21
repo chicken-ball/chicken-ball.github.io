@@ -23,7 +23,8 @@
   var yt = document.getElementById('yt');
   yt.querySelector('button').addEventListener('click', function () {
     var f = document.createElement('iframe');
-    f.src = 'https://www.youtube-nocookie.com/embed/' + yt.dataset.id + '?autoplay=1&rel=0';
+    // 広告ムービー（日本語ページは日本語版、英語ページは英語版）。紹介動画は data-play
+    f.src = 'https://www.youtube-nocookie.com/embed/' + (lang === 'ja' ? yt.dataset.ja : yt.dataset.en) + '?autoplay=1&rel=0';
     f.allow = 'autoplay; encrypted-media; picture-in-picture'; f.allowFullscreen = true; f.title = 'Trailer';
     yt.innerHTML = ''; yt.appendChild(f);
   });
