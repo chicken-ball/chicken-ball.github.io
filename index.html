@@ -25,6 +25,7 @@
   </a>
   <nav class="menu" id="menu">
     <a href="#how"><span lang="ja">遊び方</span><span lang="en">How to play</span></a>
+    <a href="#decks"><span lang="ja">おすすめデッキ</span><span lang="en">Starter decks</span></a>
     <a href="#modes"><span lang="ja">モード</span><span lang="en">Modes</span></a>
     <a href="#rivals"><span lang="ja">ライバル</span><span lang="en">Rivals</span></a>
     <a href="#cards"><span lang="ja">カード</span><span lang="en">Cards</span></a>
@@ -33,6 +34,7 @@
   </nav>
   <div class="tools">
     <button class="lang" id="langbtn" type="button" aria-label="Language">EN</button>
+    <button class="burger" id="burger" type="button" aria-label="Menu" aria-controls="menu" aria-expanded="false"><span></span><span></span><span></span></button>
     <a class="play small" id="playtop" href="https://chicken-ball.itch.io/tri-elements" target="_blank" rel="noopener"><span lang="ja">遊ぶ</span><span lang="en">Play</span></a>
   </div>
 </header>
@@ -112,6 +114,16 @@
 </section>
 
 <!-- ===== モード ===== -->
+<!-- ===== おすすめデッキ（2026-09-22） ===== -->
+<section id="decks" class="decks">
+  <div class="wrap">
+    <h2><span lang="ja">おすすめデッキ</span><span lang="en">Starter decks</span></h2>
+    <p class="sub" lang="ja">最初のパックで集まる第1〜2弾のカードだけで組める、入門デッキを3つ。AI同士の対戦で1枚ずつ入れ替えて強くしました。</p>
+    <p class="sub" lang="en">Three starter decks built only from Set 1–2 cards you'll get early on. Tuned card by card through AI-vs-AI matches.</p>
+    <div id="deckgrid" class="deckgrid"></div>
+  </div>
+</section>
+
 <section id="modes" class="modes">
   <div class="wrap">
     <h2><span lang="ja">遊べるモード</span><span lang="en">Ways to play</span></h2>
@@ -221,6 +233,7 @@
   </div>
 </footer>
 
+<script src="decks.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

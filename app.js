@@ -4,6 +4,9 @@
   // ---- 言語（端末の言語で決め、ボタンで切り替え。選んだものは覚える） ----
   var lang = 'ja';
   try { lang = localStorage.getItem('te-site-lang') || (/^ja/i.test(navigator.language) ? 'ja' : 'en'); } catch (e) {}
+  // ゲームのリンク（?lang=ja / ?lang=en）から来たら、その言語で開く
+  var qlang = (location.search.match(/[?&]lang=(ja|en)/) || [])[1];
+  if (qlang) lang = qlang;
   var body = document.body, btn = document.getElementById('langbtn');
   function applyLang(l) {
     lang = l; body.dataset.lang = l; document.documentElement.lang = l;
@@ -16,6 +19,13 @@
     renderAll();
   }
   btn.addEventListener('click', function () { applyLang(lang === 'ja' ? 'en' : 'ja'); });
+
+  // ---- スマホのメニュー（≡）。項目を押したら閉じる ----
+  var burger = document.getElementById('burger'), menu = document.getElementById('menu');
+  function setMenu(open) { menu.classList.toggle('open', open); burger.setAttribute('aria-expanded', open ? 'true' : 'false'); }
+  burger.addEventListener('click', function () { setMenu(!menu.classList.contains('open')); });
+  menu.addEventListener('click', function (ev) { if (ev.target.closest('a')) setMenu(false); });
+  document.addEventListener('keydown', function (ev) { if (ev.key === 'Escape') setMenu(false); });
   var T = function (ja, en) { return lang === 'ja' ? ja : en; };
   var esc = function (s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
 
@@ -79,6 +89,22 @@
         + '<img src="assets/cards/' + c[0] + '.webp" alt="" loading="lazy" width="300" height="300">'
         + '<span class="tx">' + esc(T(c[8], c[9])) + '</span>'
         + '<span class="st"><span class="a">⚔ ' + c[5] + '</span><span class="d">🛡 ' + c[6] + '</span></span></div>';
+    }).join('');
+  }
+
+  // ---- おすすめデッキ（decks.js） ----
+  function renderDecks() {
+    var D = window.TE_DECKS || [];
+    document.getElementById('deckgrid').innerHTML = D.map(function (d) {
+      return '<article class="deck ' + d.el + '"><div class="deck-h"><h3>' + esc(T(d.ja, d.en)) + '</h3><span class="deck-tag">' + esc(T(d.tag[0], d.tag[1])) + '</span></div>'
+        + '<div class="deck-keys">' + d.key.map(function (k) {
+          return '<figure><img src="assets/cards/' + k[0] + '.webp" alt="" loading="lazy" width="256" height="256"><figcaption>' + esc(T(k[1], k[2])) + '</figcaption></figure>';
+        }).join('') + '</div>'
+        + '<p>' + esc(T(d.sja, d.sen)) + '</p>'
+        + '<ul class="tips">' + (lang === 'ja' ? d.tip : d.tipen).map(function (t) { return '<li>' + esc(t) + '</li>'; }).join('') + '</ul>'
+        + '<details><summary>' + T('30枚のリストを見る', 'See all 30 cards') + '</summary><table>' + d.list.map(function (r) {
+          return '<tr><td class="c">' + r[0] + '</td><td><span class="dot ' + r[3] + '"></span>' + esc(T(r[1], r[2])) + '</td><td class="n">×' + r[4] + '</td></tr>';
+        }).join('') + '</table></details></article>';
     }).join('');
   }
 
@@ -146,6 +172,6 @@
     }).finally(function () { b.disabled = false; });
   });
 
-  function renderAll() { renderRivals(); renderCards(); renderShots(); renderUpdates(); }
+  function renderAll() { renderDecks(); renderRivals(); renderCards(); renderShots(); renderUpdates(); }
   applyLang(lang);
 })();
