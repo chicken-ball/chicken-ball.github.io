@@ -22,7 +22,7 @@ section{padding:64px 0}
 .tiny{color:var(--sub);font-size:12.5px}
 
 /* 言語：body[data-lang] に合わないほうを消す */
-[lang="en"]{display:none}
+body [lang="en"]{display:none}  /* html 自体（lang="en" になる）を消さないよう body の中だけ */
 body[data-lang="en"] [lang="en"]{display:revert}
 body[data-lang="en"] [lang="ja"]{display:none}
 body[data-lang="en"] span[lang="en"],body span[lang="ja"]{display:inline}
