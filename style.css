@@ -160,6 +160,9 @@ body[data-lang="en"] .badges li[lang="en"]{display:inline-block}
 .timeline ul{margin:0;padding-left:18px;color:var(--sub);font-size:14px}
 .timeline li li{padding:0;margin:2px 0}
 .timeline li li::before{display:none}
+/* 長い更新の小見出し（2026-10-09） */
+.timeline li li.tl-sub{list-style:none;margin:12px 0 4px -18px;padding:2px 0 2px 9px;border-left:3px solid var(--gold);color:var(--gold);font-weight:900;font-size:14px}
+.timeline li li.tl-sub:first-child{margin-top:6px}
 
 /* ---- 声 ---- */
 .voice{background:var(--bg2)}
