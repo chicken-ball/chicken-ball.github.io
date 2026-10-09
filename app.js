@@ -49,12 +49,13 @@
     ['a6', '黄昏の回廊', 'Twilight Corridor', [['area-06-01-riina', '観測者リィナ', 'Riina the Observer'], ['area-06-02-gear-pilgrim', '歯車の巡礼者 カルダン', 'Cardan, Pilgrim of Gears'], ['area-06-03-ordo', '黄昏の門番 オルド', 'Ordo, Twilight Gatekeeper']]],
     ['a7', '星辰の門', 'Gate of Stars', [['area-07-01-yue', '星読みのユエ', 'Yue the Stargazer'], ['area-07-02-kairos', '彗星騎士 カイロス', 'Kairos, Comet Knight'], ['area-07-03-astel', '門の守り手 アステル', 'Astel, Keeper of the Gate']]],
     ['a8', '王たちの座', 'Throne of Kings', [['area-08-01-nox', '無貌の使者 ノクス', 'Nox, the Faceless Envoy'], ['area-08-02-queen', '双極の女王 ディオーネ', 'Dione, Twin-Pole Queen'], ['area-08-03-astralis', '星辰王 アストラリス', 'Astralis, Star King']]],
-    ['a9', '継承の間', 'Hall of Succession', [['area-09-01-hinata', '灯守りのヒナタ', 'Hinata, Keeper of the Flame'], ['area-09-02-souen', '墓守のソウエン', 'Souen, the Gravekeeper'], ['area-09-03-regalis', '継承王 レガリス', 'Regalis, the Inherited Crown']]]
+    ['a9', '継承の間', 'Hall of Succession', [['area-09-01-hinata', '灯守りのヒナタ', 'Hinata, Keeper of the Flame'], ['area-09-02-souen', '墓守のソウエン', 'Souen, the Gravekeeper'], ['area-09-03-regalis', '継承王 レガリス', 'Regalis, the Inherited Crown']]],
+    ['a10', 'ゼンジの作業場の夜', 'Zenji’s Workshop at Night', [['area-10-01-tantaka', '鼓笛隊長 タンタカ', 'Drum Major Tantaka'], ['area-10-02-penpen', '司書長 ペンペン', 'Head Librarian Penpen'], ['area-10-03-tsugihagi', '未完の竜 ツギハギ', 'Unfinished Dragon Tsugihagi']]]
   ];
   function renderRivals() {
     var h = '';
     AREAS.forEach(function (a, ai) {
-      h += '<div class="area-h">' + T('エリア', 'Area ') + (ai + 1) + ' ' + esc(T(a[1], a[2])) + (ai === 8 ? '<span>' + T('クリア後', 'post-game') + '</span>' : '') + '</div>';
+      h += '<div class="area-h">' + T('エリア', 'Area ') + (ai + 1) + ' ' + esc(T(a[1], a[2])) + (ai >= 8 ? '<span>' + T('クリア後', 'post-game') + '</span>' : '') + '</div>';
       a[3].forEach(function (e, i) {
         h += '<figure class="rival' + (i === 2 ? ' boss' : '') + '"><img src="assets/rivals/' + e[0] + '.webp" alt="' + esc(T(e[1], e[2])) + '" loading="lazy" width="360" height="360">'
           + '<b>' + (i === 2 ? '<small>' + T('ボス', 'BOSS') + '</small>' : '') + esc(T(e[1], e[2])) + '</b></figure>';
