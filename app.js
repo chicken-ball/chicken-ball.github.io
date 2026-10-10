@@ -119,6 +119,14 @@
 
   // ---- 更新履歴 ----
   var UPDATES = [
+    ["2026-10-10", "Ver 2.0.2", ["遊びやすく（「ひとこと」の案から）", "Easier to play (ideas from your messages)"], [
+      ["キャラクターカードやパックで手に入れたカードを長押し（PCは右クリック）すると、入手の画面の上に説明が出るようにしました（前は後ろに隠れていました）。", "Long-press (right-click on PC) a card you just got to read its details on top of the reward screen (it used to hide behind it)."],
+      ["週替わりチャレンジに受け取っていない報酬（今週の初勝利・その日の初勝利）があると、タイトルの「週替わりチャレンジ」に赤い印が付きます。", "A red dot on Weekly Challenge in the title menu shows when a reward (first win of the week or of the day) is still waiting."],
+      ["PCでは画面の上にメニューが付き、どの画面からでも「タイトルへ」（金）と「デッキ編集」（青）に行けます。", "On PC, a top menu takes you to Title (gold) or Deck Builder (blue) from any screen."],
+      ["フリーバトルと週替わりチャレンジで、デッキの選択と難易度・「挑戦する」が、スクロールしても上に残るようにしました。", "In Free Battle and the Weekly Challenge, deck choice, difficulty and Fight stay at the top while you scroll."],
+      ["停止中のモンスターに大きく「停止」と出ます。停止中のモンスターを攻撃モードにしようとすると、確認が出ます。", "Stunned monsters show a big STUN, and you are asked before switching one to Attack Mode."],
+      ["そのターンに攻撃していないモンスターは、何度でもモードを変えられます（押し間違いを直せます）。攻撃したモンスターは変えられません。", "A monster that hasn’t attacked this turn can switch modes as often as you like; once it attacks, its mode is fixed."],
+    ]],
     ["2026-10-10", "", ["エリア10のキャラクターカード3枚", "3 Area 10 character cards"], [
       ["フリーバトルの「極」で、エリア10の3人にそれぞれ5回勝つと、そのキャラクターのカードが手に入ります。", "Beat each of the three Area 10 rivals 5 times in Free Battle on Extreme to get their character card."],
       ["鼓笛隊長 タンタカ（炎・4コスト 5/3）：撃破で覚醒し、場に残る「鼓笛隊の大太鼓」をサポートの場に置きます。大太鼓があるあいだ、味方みんなの攻撃力+1。", "Drum Major Tantaka (Fire, 4-cost 5/3): awakens on Defeat and places the Drum Corps Bass Drum in your support zone. While it stays, all your monsters get +1 ATK."],
