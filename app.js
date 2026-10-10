@@ -119,6 +119,14 @@
 
   // ---- 更新履歴 ----
   var UPDATES = [
+    ["2026-10-10", "", ["エリア10のキャラクターカード3枚", "3 Area 10 character cards"], [
+      ["フリーバトルの「極」で、エリア10の3人にそれぞれ5回勝つと、そのキャラクターのカードが手に入ります。", "Beat each of the three Area 10 rivals 5 times in Free Battle on Extreme to get their character card."],
+      ["鼓笛隊長 タンタカ（炎・4コスト 5/3）：撃破で覚醒し、場に残る「鼓笛隊の大太鼓」をサポートの場に置きます。大太鼓があるあいだ、味方みんなの攻撃力+1。", "Drum Major Tantaka (Fire, 4-cost 5/3): awakens on Defeat and places the Drum Corps Bass Drum in your support zone. While it stays, all your monsters get +1 ATK."],
+      ["司書長 ペンペン（水・5コスト 4/7）：登場時に山札の上から3枚を見て2枚を手札に。堅守で覚醒し、攻撃力が最も高い相手モンスターを手札に戻します。", "Head Librarian Penpen (Water, 5-cost 4/7): on summon, look at the top 3 cards and add 2 to your hand. Awakens on Hold and returns the enemy monster with the highest ATK to its owner’s hand."],
+      ["未完の竜 ツギハギ（無・7コスト 5/6）：墓地のモンスターの数だけ育ち（最大+3/+3）、夜明けで完成して+2/+2と【貫通】。", "Unfinished Dragon Tsugihagi (Neutral, 7-cost 5/6): grows with the monsters in your graveyard (up to +3/+3), and is finished at Dawn with +2/+2 and [Pierce]."],
+      ["3枚とも、何千回もの試し対戦で強さを確かめてから入れました。", "All three went in after thousands of test games to check their strength."],
+      ["タイトル画面のいちばん下に、ホームページ・Bluesky・YouTube へのボタンを付けました。", "Added buttons for this website, Bluesky and YouTube at the bottom of the title screen."],
+    ]],
     ["2026-10-10", "Ver 2.0.0", ["第6弾『おもちゃ箱の夜』・覚醒・エリア10", "Set 6 “The Toy Box at Night”, Awakening, Area 10"], [
       ["■第6弾『おもちゃ箱の夜』とエリア10が始まりました", "■Set 6 “The Toy Box at Night” and Area 10 are here"],
       ["第6弾は34枚。ぬいぐるみ・ブリキ・積み木など、持ち主が眠ったあとに動き出すおもちゃたちです。", "Set 6 has 34 cards: plush toys, tin toys, building blocks and more — toys that come alive after their owners fall asleep."],
