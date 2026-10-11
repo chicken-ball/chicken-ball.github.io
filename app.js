@@ -119,6 +119,20 @@
 
   // ---- 更新履歴 ----
   var UPDATES = [
+    ["2026-10-12", "Ver 2.1.0", ["図鑑とデッキ編集を新しく", "A new Card Library and Deck Builder"], [
+      ["■図鑑とデッキ編集", "■Card Library and Deck Builder"],
+      ["詳細検索を付けました。カード名・効果文の文字と、タイミング（登場時・断末魔・ターンの始め・覚醒3種・ゼンマイ・装備）、キーワード、効果（ダメージ・破壊・強化・弱体化・停止・手札に戻す・山札を削る・ドロー・回復・墓地から戻す など）、レア度で探せます。選んだ条件をすべて満たすカードが出て、ボタンの数字は選んだときに何種になるかです。", "Added an advanced search: find cards by name or text, timing (On Summon, Last Breath, turn start, the three Awaken types, Wind-up, Equip), keyword, effect (damage, destroy, buff, debuff, stun, return to hand, mill, draw, heal, from the graveyard and more) and rarity. Cards must match every condition you pick, and each button shows how many cards you would get."],
+      ["図鑑：第何弾かはプルダウンで選ぶ形にしました。絞り込みは1行目が属性、2行目が種類・入手済／未入手・詳細検索です。", "Library: pick a set from a dropdown. Filters: elements on the first row; type, owned/missing and advanced search on the second."],
+      ["デッキ編集：デッキはプルダウンで選ぶ形にしました（そろっているか・あと何枚かも表示）。スマホは「カードを選ぶ」と「デッキの中身」を上のボタンか左右のスワイプで切り替えられ、どちらも画面いっぱいに使えます。", "Deck Builder: pick decks from a dropdown that shows how many cards each has. On phones, switch between “Add cards” and “Your deck” with the tabs or by swiping — each uses the full screen."],
+      ["■カードの説明・ルール", "■Card details and rules"],
+      ["覚醒などで出すカード（火喰い鳥 ヒクイ・鼓笛隊の大太鼓など）を、カードの説明から開いて読めるようにしました。", "Cards brought out by effects (such as Hikui or the Drum Corps Bass Drum) can be opened from the card details."],
+      ["ゼンマイのカードの説明に「巻きほどく」の使い方を足し、ルールにもゼンマイの節を作りました。キーワードの並びは2列にそろえました。", "Wind-up cards now explain how to Unwind, and the rules have a Wind-up section. Keywords are laid out in an even two-column grid."],
+      ["■対戦", "■Battle"],
+      ["場のモンスターに「覚醒 夜明け」などの札を大きく出すようにしました。", "Monsters on the field show a clear “Awaken: Dawn”-style badge."],
+      ["攻撃は、カードが相手に届いた瞬間にダメージや破壊が出るようにしました（前は動き始めで出ていました）。", "Damage and destruction now land the moment the attacker reaches its target (they used to appear as it started moving)."],
+      ["■そのほか", "■Other"],
+      ["一部のカードの絵の背景が消えることがあったのを直しました。", "Fixed card art backgrounds sometimes disappearing."],
+    ]],
     ["2026-10-10", "Ver 2.0.2", ["遊びやすく（「ひとこと」の案から）", "Easier to play (ideas from your messages)"], [
       ["キャラクターカードやパックで手に入れたカードを長押し（PCは右クリック）すると、入手の画面の上に説明が出るようにしました（前は後ろに隠れていました）。", "Long-press (right-click on PC) a card you just got to read its details on top of the reward screen (it used to hide behind it)."],
       ["週替わりチャレンジに受け取っていない報酬（今週の初勝利・その日の初勝利）があると、タイトルの「週替わりチャレンジ」に赤い印が付きます。", "A red dot on Weekly Challenge in the title menu shows when a reward (first win of the week or of the day) is still waiting."],
