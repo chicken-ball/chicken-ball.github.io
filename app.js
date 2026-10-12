@@ -119,6 +119,12 @@
 
   // ---- 更新履歴 ----
   var UPDATES = [
+    ["2026-10-12", "Ver 2.1.1", ["新しい絵違いカード：ビビッドアートポスター風の6枚", "New alternate art: six vivid-poster cards"], [
+      ["フリーバトルの「極」で属性の王に10勝すると、竜の絵違いが届きます（炎皇バルガ→業火のドラゴン／海皇ネプト→海淵のリヴァイアサン／世界樹の守護者 ヴェルダ→棘竜ソーンドレイク）。これまでに勝った数も数えます。", "Beat an elemental ruler 10 times on Extreme in Free Battle to receive a dragon’s alternate art (Varga → Inferno Dragon / Nept → Abyssal Leviathan / Verda → Thorn Drake). Earlier wins count too."],
+      ["カードショップで、シンダーウィッチ・フロストウィッチ・世界樹の化身 ユグドラの絵違いを星屑100で交換できます。", "Trade 100 Stardust each in the Card Shop for alternate art of Cinder Witch, Frost Witch and Yggdra."],
+      ["フリーバトルの相手の札とショップの並びをそろえ、相手のターンの表示は肩書きと名前を2行に分けました。", "Free Battle opponents and Shop items now line up neatly, and the opponent turn banner shows title and name on separate lines."],
+      ["みんなのデッキに、第6弾のカードが入ったデッキも出せるようにしました。", "Decks with Set 6 cards can now be shared on the deck board."],
+    ]],
     ["2026-10-12", "Ver 2.1.0", ["図鑑とデッキ編集を新しく", "A new Card Library and Deck Builder"], [
       ["■図鑑とデッキ編集", "■Card Library and Deck Builder"],
       ["詳細検索を付けました。カード名・効果文の文字と、タイミング（登場時・断末魔・ターンの始め・覚醒3種・ゼンマイ・装備）、キーワード、効果（ダメージ・破壊・強化・弱体化・停止・手札に戻す・山札を削る・ドロー・回復・墓地から戻す など）、レア度で探せます。選んだ条件をすべて満たすカードが出て、ボタンの数字は選んだときに何種になるかです。", "Added an advanced search: find cards by name or text, timing (On Summon, Last Breath, turn start, the three Awaken types, Wind-up, Equip), keyword, effect (damage, destroy, buff, debuff, stun, return to hand, mill, draw, heal, from the graveyard and more) and rarity. Cards must match every condition you pick, and each button shows how many cards you would get."],
