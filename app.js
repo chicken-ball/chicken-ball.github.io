@@ -119,6 +119,11 @@
 
   // ---- 更新履歴 ----
   var UPDATES = [
+    ["2026-10-12", "Ver 2.1.2", ["冒険のエリア選びと図鑑を使いやすく", "Easier area picking and Card Library"], [
+      ["冒険：エリアを1〜10の番号で全部並べました。押すとそのエリアへすぐ行けます。番号の下の印で、倒した数・報酬が残っているか・報酬も受け取り済みかが分かり、次に進むエリアには赤い点が付きます。", "Adventure: all ten areas are lined up by number — tap one to jump there. Marks show how many rivals you beat, whether rewards are left, or if everything is claimed, and a red dot marks the next area."],
+      ["図鑑：「絞り込みをたたむ」で上の部分を1行にまとめ、カードを広く見られるようにしました。", "Library: “Hide filters” folds the top into one row so you can see more cards."],
+      ["図鑑：絵違いカードを持っている人は「✦ 絵違い」で絞り込めます。カードの詳細から、そのカードを持っていなくても、絵違いと通常の絵を切り替えられます。", "Library: filter for your alternate art with “✦ Alt art”, and switch between alternate and standard art from the card details — even if you don’t own the card itself."],
+    ]],
     ["2026-10-12", "Ver 2.1.1", ["新しい絵違いカード：ビビッドアートポスター風の6枚", "New alternate art: six vivid-poster cards"], [
       ["フリーバトルの「極」で属性の王に10勝すると、竜の絵違いが届きます（炎皇バルガ→業火のドラゴン／海皇ネプト→海淵のリヴァイアサン／世界樹の守護者 ヴェルダ→棘竜ソーンドレイク）。これまでに勝った数も数えます。", "Beat an elemental ruler 10 times on Extreme in Free Battle to receive a dragon’s alternate art (Varga → Inferno Dragon / Nept → Abyssal Leviathan / Verda → Thorn Drake). Earlier wins count too."],
       ["カードショップで、シンダーウィッチ・フロストウィッチ・世界樹の化身 ユグドラの絵違いを星屑100で交換できます。", "Trade 100 Stardust each in the Card Shop for alternate art of Cinder Witch, Frost Witch and Yggdra."],
