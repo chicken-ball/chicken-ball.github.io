@@ -119,6 +119,13 @@
 
   // ---- 更新履歴 ----
   var UPDATES = [
+    ["2026-10-13", "Ver 2.1.3", ["不具合の修正", "Bug fixes"], [
+      ["再生の芽吹き：墓地から選ぶとき、草以外のモンスターも並んでいて、選ぶと何も出ずにカードだけ使われていたのを直しました。草のモンスターだけが並びます。", "Rebirth Sprout: non-Grass monsters were listed when choosing from the graveyard, and picking one used up the card with no effect. Now only Grass monsters are listed."],
+      ["甦りの森：2体目が「選んだカードの次のカード」になり、別の属性だと出なかったのを直しました。2枚まで選んでから「出す」を押す形にしました。", "Forest Reborn: the second monster was whichever card came after your pick, and nothing came out if it was another element. You now choose up to two cards, then press Summon."],
+      ["最初の対戦の「防御モード」の説明：守る側の属性の有利（防御+1）が数字に入っておらず、結果と食い違うことがあったのを直しました。攻撃の知らせにも、防御+1 で受け止めたことが出ます。", "First-battle Defense Mode tip: the numbers left out the defender’s element advantage (+1 DEF) and could contradict the result. The attack notice now shows the +1 DEF as well."],
+      ["はじめの名前とアバターの画面：スマホでキーボードを出すとアバターの並びが崩れていたのを直しました。", "First-time name and avatar screen: avatars no longer fall out of line when the phone keyboard opens."],
+      ["AI が再生の芽吹きで草以外を選んで空振りすることがあったのを直しました。", "The AI no longer wastes Rebirth Sprout on a non-Grass monster."],
+    ]],
     ["2026-10-12", "Ver 2.1.2", ["冒険のエリア選びと図鑑を使いやすく", "Easier area picking and Card Library"], [
       ["冒険：エリアを1〜10の番号で全部並べました。押すとそのエリアへすぐ行けます。番号の下の印で、倒した数・報酬が残っているか・報酬も受け取り済みかが分かり、次に進むエリアには赤い点が付きます。", "Adventure: all ten areas are lined up by number — tap one to jump there. Marks show how many rivals you beat, whether rewards are left, or if everything is claimed, and a red dot marks the next area."],
       ["図鑑：「絞り込みをたたむ」で上の部分を1行にまとめ、カードを広く見られるようにしました。", "Library: “Hide filters” folds the top into one row so you can see more cards."],
@@ -291,11 +298,12 @@
   ];
   function renderUpdates() {
     document.getElementById('timeline').innerHTML = UPDATES.map(function (u) {
-      return '<li><time>' + u[0] + (u[1] ? ' · ' + u[1] : '') + '</time><h3>' + esc(T(u[2][0], u[2][1])) + '</h3><ul>'
+      // 1件ずつ「更新日・版・題」の1行にたたみ、押すと中身が開く（スマホで画面14枚ぶんあった。2026-10-13）
+      return '<li><details><summary><time>' + u[0] + (u[1] ? ' · ' + u[1] : '') + '</time><h3>' + esc(T(u[2][0], u[2][1])) + '</h3></summary><ul>'
         + u[3].map(function (x) {
           var t = T(x[0], x[1]);
           return t.charAt(0) === '■' ? '<li class="tl-sub">' + esc(t.slice(1)) + '</li>' : '<li>' + esc(t) + '</li>';
-        }).join('') + '</ul></li>';
+        }).join('') + '</ul></details></li>';
     }).join('');
   }
 

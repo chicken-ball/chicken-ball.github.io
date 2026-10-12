@@ -206,3 +206,16 @@ body[data-lang="en"] .badges li[lang="en"]{display:inline-block}
 .deck td.n{width:2.6em;text-align:right;color:var(--sub)}
 .deck td .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;background:#7b7f8c}
 .deck td .dot.fire{background:var(--fire)}.deck td .dot.water{background:var(--water)}.deck td .dot.grass{background:var(--grass)}
+
+/* 更新履歴：1件ずつたたむ（日付・版・題の1行。押すと開く） */
+.timeline li{padding-bottom:10px}
+.timeline details summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:1fr auto;column-gap:10px;align-items:center;padding:4px 0}
+.timeline details summary::-webkit-details-marker{display:none}
+.timeline details summary time{grid-column:1}
+.timeline details summary h3{grid-column:1;margin:1px 0 0;font-size:16px;line-height:1.45}
+.timeline details summary::after{content:"＋";grid-column:2;grid-row:1 / span 2;width:28px;height:28px;border-radius:50%;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--gold);font-weight:900;font-size:14px;transition:transform .15s}
+.timeline details[open] summary::after{content:"－"}
+.timeline details summary:hover h3{color:var(--gold)}
+.timeline details summary:focus-visible{outline:2px solid var(--gold);outline-offset:4px;border-radius:6px}
+.timeline details ul{margin:6px 0 8px}
+@media (prefers-reduced-motion:reduce){.timeline details summary::after{transition:none}}
