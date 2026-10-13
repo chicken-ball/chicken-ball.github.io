@@ -119,7 +119,8 @@
 
   // ---- 更新履歴 ----
   var UPDATES = [
-    ["2026-10-13", "Ver 2.1.3", ["不具合の修正", "Bug fixes"], [
+    ["2026-10-13", "Ver 2.1.3", ["覚醒の説明と不具合の修正", "Awakening tips and bug fixes"], [
+      ["覚醒を持つカードを初めて場に出したとき、覚醒の3種類（夜明け・撃破・堅守）とそのカードの効果を説明するようにしました。初めて覚醒したときにも、何が起きたかを1回だけ説明します。", "The first time you play a card with Awaken, a short note explains the three kinds (Dawn, Defeat, Hold) and that card’s effect. The first time one awakens, it explains what happened."],
       ["再生の芽吹き：墓地から選ぶとき、草以外のモンスターも並んでいて、選ぶと何も出ずにカードだけ使われていたのを直しました。草のモンスターだけが並びます。", "Rebirth Sprout: non-Grass monsters were listed when choosing from the graveyard, and picking one used up the card with no effect. Now only Grass monsters are listed."],
       ["甦りの森：2体目が「選んだカードの次のカード」になり、別の属性だと出なかったのを直しました。2枚まで選んでから「出す」を押す形にしました。", "Forest Reborn: the second monster was whichever card came after your pick, and nothing came out if it was another element. You now choose up to two cards, then press Summon."],
       ["最初の対戦の「防御モード」の説明：守る側の属性の有利（防御+1）が数字に入っておらず、結果と食い違うことがあったのを直しました。攻撃の知らせにも、防御+1 で受け止めたことが出ます。", "First-battle Defense Mode tip: the numbers left out the defender’s element advantage (+1 DEF) and could contradict the result. The attack notice now shows the +1 DEF as well."],
