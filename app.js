@@ -119,6 +119,16 @@
 
   // ---- 更新履歴 ----
   var UPDATES = [
+    ["2026-10-13", "Ver 2.1.4", ["対戦の操作と絵違いの予定", "Quicker battle controls and an alt-art schedule"], [
+      ["■対戦", "■Battle"],
+      ["自分のモンスターを押して、相手のモンスターか相手の顔を押すだけで攻撃できるようにしました。選んだモンスターは金色に光ります。同じモンスターをもう一度押すとモード変更です。攻撃もモード変更もできないモンスターを押すと、カードの説明が出ます。", "Tap your monster, then tap an enemy monster or your opponent to attack. The chosen monster glows gold, and tapping it again switches its mode. Tapping a monster that can do neither shows its card."],
+      ["■絵違いの予定", "■Alt-art schedule"],
+      ["図鑑とショップに「絵違いの予定」を足しました。選定の儀は2週間ぶん、週替わりチャレンジは4週ぶんの景品と、いつでも取れる絵違いが、取り方と一緒に見られます。", "Added “Alt-art schedule” to the Library and Shop: the next two weeks of Daily Rite prizes, four weeks of Weekly Challenge prizes, and the always-available ones, with how to get each."],
+      ["■そのほか", "■Other"],
+      ["PC：画面の縦が短いとき、タイトルのロゴが上に隠れていたのを直しました。上下の矢印キー・PageUp/PageDown・Home で画面をスクロールできます。", "PC: the title logo no longer hides off the top on short screens. Arrow keys, PageUp/PageDown and Home now scroll the screen."],
+      ["冒険：エリア名の横の ▶ と「一覧」が、エリア名の長さで動かないようにしました（▶ の連打で「一覧」を押してしまうことがありました）。", "Adventure: the ▶ and “All areas” buttons no longer move with the area name’s length."],
+      ["苗床の守り手・突撃合図：効果に合うよう説明文を直しました（苗床の守り手は自分には効きません。突撃合図の +1/+1 はターンが終わっても残ります）。", "Seedbed Keeper and Battle Cry: card texts now match their effects (Seedbed Keeper doesn’t boost itself; Battle Cry’s +1/+1 lasts beyond the turn)."],
+    ]],
     ["2026-10-13", "Ver 2.1.3", ["覚醒の説明と不具合の修正", "Awakening tips and bug fixes"], [
       ["覚醒を持つカードを初めて場に出したとき、覚醒の3種類（夜明け・撃破・堅守）とそのカードの効果を説明するようにしました。初めて覚醒したときにも、何が起きたかを1回だけ説明します。", "The first time you play a card with Awaken, a short note explains the three kinds (Dawn, Defeat, Hold) and that card’s effect. The first time one awakens, it explains what happened."],
       ["再生の芽吹き：墓地から選ぶとき、草以外のモンスターも並んでいて、選ぶと何も出ずにカードだけ使われていたのを直しました。草のモンスターだけが並びます。", "Rebirth Sprout: non-Grass monsters were listed when choosing from the graveyard, and picking one used up the card with no effect. Now only Grass monsters are listed."],
