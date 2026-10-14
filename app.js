@@ -119,6 +119,17 @@
 
   // ---- 更新履歴 ----
   var UPDATES = [
+    ["2026-10-14", "Ver 2.1.6", ["出すときのモード・景品の印・カードの書き方", "Summon mode, prize marks and clearer card text"], [
+      ["■対戦", "■Battle"],
+      ["設定の「プレイヤー」に「モンスターを出すときのモード」を足しました。「いつも攻撃モードで出す」にすると、空いている枠に出すときのモードの選択がなくなります。防御モードにしたいときは、出したあとにそのモンスターを2回押します。入れ替えて出すときは、これまでどおり選べます。", "Added “Mode when summoning” to Settings → Player. With “Always Attack Mode”, summoning into an empty slot skips the mode choice; tap the monster twice afterwards for Defense Mode. You still choose when replacing a monster."],
+      ["■選定の儀", "■Daily Rite"],
+      ["景品のある日は、まだ挑戦していないとき・ランキングに参加していないとき・いまの順位が景品の外のときに、タイトルの「選定の儀」に印が出て、今日の一行にも理由が出ます。", "On prize days, the Rite button on the title screen gets a mark — with the reason in today’s line — if you haven’t tried yet, haven’t joined the ranking, or are outside the prize ranks."],
+      ["■カードの書き方", "■Card text"],
+      ["モンスターへの効果は「防御力を-2する」のように書くことにして、「ダメージ」はプレイヤーのライフを減らすときだけに使うようにしました（鉄靴の擲弾兵・挟撃の一手・花火大王 ドンドコ・トゲの門番・積み木のゴーレム・【突撃】）。対戦の記録も「防御力 -2（残り1）」と出ます。", "Effects on monsters now read like “give -2 DEF”, and “damage” only means damage to a player’s Life (Ironboot Grenadier, Pincer Move, Dondoko, Thorn Gatekeeper, Block Golem, [Cleave]). The battle log shows “-2 DEF (1 left)” too."],
+      ["詳細検索の「ダメージ」を「プレイヤーにダメージ」と「防御力を下げる」に分けました。", "Advanced search now splits “Damage” into “Damage to player” and “Lower DEF”."],
+      ["■不具合の修正", "■Fixes"],
+      ["溶岩の申し子：断末魔で防御力が0になった相手が、破壊されずに残ることがあったのを直しました。", "Lava Spawn: a monster brought to 0 DEF by its Last Breath sometimes stayed on the field. Fixed."],
+    ]],
     ["2026-10-14", "Ver 2.1.5", ["選定の儀のライバルの点数", "Daily Rite rival scores"], [
       ["選定の儀のライバルの点数を出すとき、対戦相手がプレイヤーと戦うときと違う動き（最初の手札の引き直しの決まりと、迷い方）をしていたのを直しました。10/14 の点数から、プレイヤーとまったく同じ条件で計算しています。", "When the Daily Rite rival scores were calculated, the opponents behaved differently from how they play against you (their opening redraw rule and how they hesitate). From October 14, rival scores use exactly the same conditions as yours."],
       ["タイトルの「作者から」を、ゲームを更新しなくてもお届けできるようにしました。", "“From the maker” on the title screen can now be updated without a game update."],
