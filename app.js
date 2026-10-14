@@ -119,6 +119,10 @@
 
   // ---- 更新履歴 ----
   var UPDATES = [
+    ["2026-10-14", "Ver 2.1.5", ["選定の儀のライバルの点数", "Daily Rite rival scores"], [
+      ["選定の儀のライバルの点数を出すとき、対戦相手がプレイヤーと戦うときと違う動き（最初の手札の引き直しの決まりと、迷い方）をしていたのを直しました。10/14 の点数から、プレイヤーとまったく同じ条件で計算しています。", "When the Daily Rite rival scores were calculated, the opponents behaved differently from how they play against you (their opening redraw rule and how they hesitate). From October 14, rival scores use exactly the same conditions as yours."],
+      ["タイトルの「作者から」を、ゲームを更新しなくてもお届けできるようにしました。", "“From the maker” on the title screen can now be updated without a game update."],
+    ]],
     ["2026-10-13", "Ver 2.1.4", ["対戦の操作と絵違いの予定", "Quicker battle controls and an alt-art schedule"], [
       ["■対戦", "■Battle"],
       ["自分のモンスターを押して、相手のモンスターか相手の顔を押すだけで攻撃できるようにしました。選んだモンスターは金色に光ります。同じモンスターをもう一度押すとモード変更です。攻撃もモード変更もできないモンスターを押すと、カードの説明が出ます。", "Tap your monster, then tap an enemy monster or your opponent to attack. The chosen monster glows gold, and tapping it again switches its mode. Tapping a monster that can do neither shows its card."],

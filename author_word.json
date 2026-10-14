@@ -1,0 +1,21 @@
+{
+ "date": "2026-10-14",
+ "title": {
+  "ja": "今日の選定の儀のランキングについて",
+  "en": "About today’s Daily Rite ranking"
+ },
+ "body": [
+  {
+   "ja": "今日の選定の儀は、ライバルの点数がやけに高かったので調べました。ライバルの点数を出すとき、対戦相手がプレイヤーと戦うときと違う動きをしていました。",
+   "en": "Today’s rival scores in the Daily Rite looked far too high, so I looked into it. When the rivals’ scores were calculated, their opponents were behaving differently from how they play against you."
+  },
+  {
+   "ja": "プレイヤーと同じ条件で動かした点数に直しましたので、もう一度ランキング上位を目指してみてください！",
+   "en": "The rival scores have now been recalculated under exactly the same conditions as yours, so please aim for the top of the ranking again!"
+  },
+  {
+   "ja": "選定の儀は公平に競えるよう、同じカードを同じ順番で選べば同じ手札が来る、パズルのような仕組みになっています。何度でも挑戦してみてください！",
+   "en": "To keep the Rite fair, it works like a puzzle: pick the same cards in the same order and you’ll draw the same hands. Try as many times as you like!"
+  }
+ ]
+}
