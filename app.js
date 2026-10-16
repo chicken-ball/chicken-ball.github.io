@@ -119,6 +119,12 @@
 
   // ---- 更新履歴 ----
   var UPDATES = [
+    ["2026-10-16", "Ver 2.1.7", ["山札の枚数の位置・PLiCyのボタン", "Deck count position and PLiCy buttons"], [
+      ["■対戦", "■Battle"],
+      ["自分の山札と墓地の枚数を、札の下から上に移しました。相手の枚数は札の下のままなので、どちらも盤面のまんなか側に並びます。スマホの縦画面では、自分の枚数が盤面の下のふちで切れて見えないことがありました。", "Your deck and graveyard counts moved from below the piles to above them. The opponent’s stay below theirs, so both sit toward the middle of the board. On some phones in portrait, your count was cut off at the bottom edge of the board."],
+      ["■不具合の修正", "■Fixes"],
+      ["PLiCy：画面の右上に PLiCy の「ミニ実況」ボタンが重なり、その下にある「×」や「デッキ編集」「保存」「挑戦する」などが押せなかったのを直しました（PLiCy 版だけの直しです）。", "PLiCy: PLiCy’s “mini let’s-play” button sits in the top-right corner, so the × and buttons such as Edit Deck, Save and Challenge underneath couldn’t be tapped. Fixed (PLiCy version only)."],
+    ]],
     ["2026-10-14", "Ver 2.1.6", ["出すときのモード・景品の印・カードの書き方", "Summon mode, prize marks and clearer card text"], [
       ["■対戦", "■Battle"],
       ["設定の「プレイヤー」に「モンスターを出すときのモード」を足しました。「いつも攻撃モードで出す」にすると、空いている枠に出すときのモードの選択がなくなります。防御モードにしたいときは、出したあとにそのモンスターを2回押します。入れ替えて出すときは、これまでどおり選べます。", "Added “Mode when summoning” to Settings → Player. With “Always Attack Mode”, summoning into an empty slot skips the mode choice; tap the monster twice afterwards for Defense Mode. You still choose when replacing a monster."],
