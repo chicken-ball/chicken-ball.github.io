@@ -119,6 +119,12 @@
 
   // ---- 更新履歴 ----
   var UPDATES = [
+    ["2026-10-17", "Ver 2.1.8", ["キャラのカットイン・ダブりを星屑に", "Character cut-ins and duplicates to Stardust"], [
+      ["■対戦", "■Battle"],
+      ["キャラカード（30人）を出すと、そのキャラの全身の絵が画面に現れて、名前と決めゼリフが出ます（1秒ちょっと）。盤面は透けて見えたままで、画面を押すとすぐ飛ばせます。相手が出したときも出ます。", "Playing any of the 30 character cards brings that character's full-body art on screen with their name and a catchphrase (just over a second). The board stays visible underneath, and a tap skips it. It also plays when your opponent plays one."],
+      ["■図鑑", "■Library"],
+      ["図鑑の「絵違いの予定」の横に「ダブりを星屑に」を足しました。デッキに入れられる枚数（3枚・レジェンドは1枚）より多いカードだけを星屑に交換します。レートは、コモン10枚で1・アンコモン5枚で1・レア2枚で1・エピック1枚で2・レジェンド1枚で5。割り切れない分は手元に残り、次に交換するときに一緒に数えます。キャラカードなどの特別なカードは対象外です。", "Added “Duplicates → Stardust” next to the alt-art schedule in the Library. Only copies beyond what a deck can hold (3, or 1 for Legends) are traded: 10 Commons, 5 Uncommons or 2 Rares for 1, 2 per Epic, 5 per Legend. Leftovers stay in your collection and count toward the next trade. Character cards and other special cards are not included."],
+    ]],
     ["2026-10-16", "Ver 2.1.7", ["山札の枚数の位置・PLiCyのボタン", "Deck count position and PLiCy buttons"], [
       ["■対戦", "■Battle"],
       ["自分の山札と墓地の枚数を、札の下から上に移しました。相手の枚数は札の下のままなので、どちらも盤面のまんなか側に並びます。スマホの縦画面では、自分の枚数が盤面の下のふちで切れて見えないことがありました。", "Your deck and graveyard counts moved from below the piles to above them. The opponent’s stay below theirs, so both sit toward the middle of the board. On some phones in portrait, your count was cut off at the bottom edge of the board."],
