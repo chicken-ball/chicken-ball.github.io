@@ -1,21 +1,25 @@
 {
- "date": "2026-10-14",
+ "date": "2026-10-21",
  "title": {
-  "ja": "今日の選定の儀のランキングについて",
-  "en": "About today’s Daily Rite ranking"
+  "ja": "クリア後の楽しみを追加しました",
+  "en": "Something new for after the credits"
  },
  "body": [
   {
-   "ja": "今日の選定の儀は、ライバルの点数がやけに高かったので調べました。ライバルの点数を出すとき、対戦相手がプレイヤーと戦うときと違う動きをしていました。",
-   "en": "Today’s rival scores in the Daily Rite looked far too high, so I looked into it. When the rivals’ scores were calculated, their opponents were behaving differently from how they play against you."
+   "ja": "いつも遊んでくれてありがとうございます！",
+   "en": "Thank you, as always, for playing!"
   },
   {
-   "ja": "プレイヤーと同じ条件で動かした点数に直しましたので、もう一度ランキング上位を目指してみてください！",
-   "en": "The rival scores have now been recalculated under exactly the same conditions as yours, so please aim for the top of the ranking again!"
+   "ja": "クリア後の楽しみを少し追加しましたので、ぜひ試してみてください。",
+   "en": "I’ve added a little something to enjoy after clearing the game — please give it a try."
   },
   {
-   "ja": "選定の儀は公平に競えるよう、同じカードを同じ順番で選べば同じ手札が来る、パズルのような仕組みになっています。何度でも挑戦してみてください！",
-   "en": "To keep the Rite fair, it works like a puzzle: pick the same cards in the same order and you’ll draw the same hands. Try as many times as you like!"
+   "ja": "β版です、まだまだ改善の余地はあるかと思います。常連の皆さまのお力をお貸しいただけると嬉しいです！",
+   "en": "It’s a beta, and there’s still plenty of room to improve. I’d be grateful for help from all of you regulars!"
+  },
+  {
+   "ja": "試練の塔ページからボタン選びだけでも感想を送れますので、ご協力お願いします！",
+   "en": "You can send feedback from the Tower of Trials page just by picking a button — thank you for your help!"
   }
  ]
 }
