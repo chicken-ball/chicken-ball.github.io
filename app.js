@@ -20,6 +20,34 @@
   }
   btn.addEventListener('click', function () { applyLang(lang === 'ja' ? 'en' : 'ja'); });
 
+  // ---- どこから来たかを数える（2026-10-23）。YouTube・Bluesky の説明欄のリンクは ?from=yt / ?from=bsky 付き ----
+  //   送るのは「開いた」「遊ぶボタンを押した（itch・PLiCy のどちら）」と、来た元（from か、リンク元のサイト名）だけ。名前などは送らない
+  (function () {
+    try {
+      if (navigator.webdriver || /^(localhost|127\.|192\.168\.)/.test(location.hostname)) return;   // 確認の道具・手元では送らない
+      var EP = 'https://te.161-33-217-165.nip.io/e';
+      var id = '';
+      try { id = localStorage.getItem('te-site-id') || ''; } catch (e) {}
+      if (!id) { id = 's' + Math.random().toString(36).slice(2, 10); try { localStorage.setItem('te-site-id', id); } catch (e) {} }
+      var q = (location.search.match(/[?&]from=([a-z0-9_-]{1,16})/i) || [])[1];
+      var ref = '';
+      try { ref = document.referrer ? new URL(document.referrer).hostname.replace(/^www\./, '').slice(0, 30) : ''; } catch (e) {}
+      if (ref === location.hostname) ref = '';
+      var from = (q || ref || 'direct').toLowerCase();
+      var send = function (extra) {
+        var u = EP + '?v=1&e=site&u=' + encodeURIComponent(id) + '&f=' + encodeURIComponent(from) + '&l=' + lang + extra;
+        try { if (navigator.sendBeacon && navigator.sendBeacon(u)) return; } catch (e) {}
+        try { new Image().src = u; } catch (e) {}
+      };
+      send('&a=open');
+      document.addEventListener('click', function (ev) {
+        var a = ev.target.closest && ev.target.closest('a[href]'); if (!a) return;
+        var to = /itch\.io\/tri-elements/.test(a.href) ? 'itch' : /plicy\.net\/GamePlay/.test(a.href) ? 'plicy' : /freegame-mugen/.test(a.href) ? 'mugen' : '';
+        if (to) send('&a=go&to=' + to);
+      }, true);
+    } catch (e) { /* 数えられなくても、ページはそのまま */ }
+  })();
+
   // ---- スマホのメニュー（≡）。項目を押したら閉じる ----
   var burger = document.getElementById('burger'), menu = document.getElementById('menu');
   function setMenu(open) { menu.classList.toggle('open', open); burger.setAttribute('aria-expanded', open ? 'true' : 'false'); }
