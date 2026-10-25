@@ -1,8 +1,8 @@
 {
- "date": "2026-10-21",
+ "date": "2026-10-26",
  "title": {
-  "ja": "クリア後の楽しみを追加しました",
-  "en": "Something new for after the credits"
+  "ja": "イベント戦のご意見を募集しています",
+  "en": "Tell us what events you'd like"
  },
  "body": [
   {
@@ -10,16 +10,16 @@
    "en": "Thank you, as always, for playing!"
   },
   {
-   "ja": "クリア後の楽しみを少し追加しましたので、ぜひ試してみてください。",
-   "en": "I’ve added a little something to enjoy after clearing the game — please give it a try."
+   "ja": "お知らせにもあるとおり、「イベント」の画面ができました。これに合わせて、レギュレーション戦などのイベント戦を考えはじめています。",
+   "en": "As mentioned in the news, there’s now an Events screen. Along with it, I’ve started planning Regulation Battles and other event battles."
   },
   {
-   "ja": "β版です、まだまだ改善の余地はあるかと思います。常連の皆さまのお力をお貸しいただけると嬉しいです！",
-   "en": "It’s a beta, and there’s still plenty of room to improve. I’d be grateful for help from all of you regulars!"
+   "ja": "どんなイベントなら楽しめそうか、欲しい景品など、皆さまのご要望やご意見を心からお待ちしています。設定の「ひとこと」から送れます。",
+   "en": "What kind of events would you enjoy? What prizes would you like? I’d truly love to hear your ideas and requests — you can send them from Settings → Message."
   },
   {
-   "ja": "試練の塔ページからボタン選びだけでも感想を送れますので、ご協力お願いします！",
-   "en": "You can send feedback from the Tower of Trials page just by picking a button — thank you for your help!"
+   "ja": "引き続きよろしくお願いします！",
+   "en": "Thanks for sticking with us!"
   }
  ]
 }
