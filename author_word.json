@@ -1,8 +1,8 @@
 {
  "date": "2026-10-26",
  "title": {
-  "ja": "イベント戦のご意見を募集しています",
-  "en": "Tell us what events you'd like"
+  "ja": "小さきものの行進、10/29（木）から！",
+  "en": "March of the Small starts Oct 29!"
  },
  "body": [
   {
@@ -10,16 +10,16 @@
    "en": "Thank you, as always, for playing!"
   },
   {
-   "ja": "お知らせにもあるとおり、「イベント」の画面ができました。これに合わせて、レギュレーション戦などのイベント戦を考えはじめています。",
-   "en": "As mentioned in the news, there’s now an Events screen. Along with it, I’ve started planning Regulation Battles and other event battles."
+   "ja": "10/29（木）から1週間、レギュレーション戦「小さきものの行進」を開きます。コスト3以下のモンスターだけで戦うイベントです。",
+   "en": "From Oct 29 (Thu), the Regulation Battle “March of the Small” runs for one week — only monsters that cost 3 or less are allowed."
   },
   {
-   "ja": "どんなイベントなら楽しめそうか、欲しい景品など、皆さまのご要望やご意見を心からお待ちしています。設定の「ひとこと」から送れます。",
-   "en": "What kind of events would you enjoy? What prizes would you like? I’d truly love to hear your ideas and requests — you can send them from Settings → Message."
+   "ja": "勝つと「小さきものの印」がたまり（1日3つまで）、9つで絵違い「群れの先達」がもらえます。毎日少しずつ遊んでみてください。",
+   "en": "Win battles to collect Marks of the Small (up to 3 a day). Nine marks earn the alt-art Herd Leader, so try a little each day!"
   },
   {
-   "ja": "引き続きよろしくお願いします！",
-   "en": "Thanks for sticking with us!"
+   "ja": "感想や、次に遊びたい決まりは、設定の「ひとこと」から送ってください。",
+   "en": "Tell us how it went, or which rules you’d like next, from Settings → Message."
   }
  ]
 }
