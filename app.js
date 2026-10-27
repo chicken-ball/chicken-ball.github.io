@@ -147,6 +147,63 @@
 
   // ---- 更新履歴 ----
   var UPDATES = [
+    ["2026-10-27", "Ver 2.5.0", ["カードの見直し・デッキ20個・攻撃の予約", "Card refresh, 20 deck slots and queued attacks"], [
+      ["あまり使われていなかったカード10枚を見直しました", "Reworked 10 underused cards"],
+      ["山札から探すカード：輪廻の環（コスト2以下の草モンスター2枚・2コストに）、継承の軍旗（【旗】のモンスター2枚まで・3コストに）、静かな継承（【継承】のモンスター2枚まで）、隊列を組め（【隊列】のモンスター1枚）、忘れ形見のクラゲ（断末魔で【継承】のカード1枚）", "Deck-search cards: Circle of Rebirth (2 Grass monsters costing 2 or less, now 2 cost), Banner of Succession (up to 2 [Banner] monsters, now 3 cost), Quiet Succession (up to 2 [Legacy] monsters), Fall In! (a [Formation] monster), Keepsake Jelly (Last Breath: a [Legacy] card)"],
+      ["氷の防壁：並びの条件をなくし、自分のモンスター全部を次の相手のターンが終わるまで戦闘で守るように（どの属性でも）。万象の鏡：相手の場を山札に戻して混ぜる（6コスト）", "Ice Barrier no longer needs adjacent monsters: all your monsters can’t be destroyed in battle until the end of the opponent’s next turn. Mirror of All Things now shuffles all enemy monsters into their deck (6 cost)"],
+      ["大地の反撃は2コストに、入れ替えの符は1コストになりました", "Earth’s Counter now costs 2, and Recall Talisman costs 1"],
+      ["世界樹の化身 ユグドラ：5コスト・5/6になり、【登場時】自分の草モンスター全てを+2/+2するように（星環の門と役目が重なっていたため）", "Yggdra, World Tree Avatar now costs 5 and is 5/6. On Summon, it gives all your Grass monsters +2/+2 (it overlapped too much with Star Ring Gate)"],
+      ["図鑑の詳細検索に「山札から探す」を足しました", "Added “Search deck” to the Library’s advanced search"],
+      ["保存できるデッキが8個から20個になりました（ひとことの案から）", "You can now save 20 decks instead of 8 (from player feedback)"],
+      ["攻撃の演出中に次の攻撃を押すと、いまの攻撃が当たったらすぐに行うようにしました（ひとことの案から）", "Tap your next attack during an attack animation and it goes off as soon as the current one lands (from player feedback)"],
+      ["停止中のモンスターを攻撃モードにするときの確認は、防御モードのほうが守りが固いときだけ出るようにしました（ひとことの案から）", "The check when switching a stunned monster to Attack Mode now appears only when Defense Mode protects it better (from player feedback)"],
+      ["レギュレーション戦の印を新しくしました", "New look for Regulation Battle marks"],
+      ["いくつかの不具合を修正しました", "Fixed a few bugs"],
+    ]],
+    ["2026-10-26", "Ver 2.4.1", ["「作者から」の赤丸・小さきものの行進の予告", "New-message dot and March of the Small preview"], [
+      ["タイトルの「作者から」に新しい文が届いたら、赤い丸で知らせるようにしました", "When a new message from the creator arrives, the “From the creator” button on the title screen now shows a red dot"],
+      ["10/29（木）から11/4（水）まで、レギュレーション戦「小さきものの行進」を開きます（コスト3以下のモンスターだけ・勝つと印がたまり、9つで絵違い「群れの先達」）", "Regulation Battle “March of the Small” runs Oct 29 – Nov 4: monsters costing 3 or less only. Wins earn marks, and nine marks get the alt-art Herd Leader"],
+    ]],
+    ["2026-10-25", "Ver 2.4.0", ["「イベント」の入口", "The new Events hub"], [
+      ["タイトルの「週替わりチャレンジ」が「イベント」になりました。開催中のイベントがバナーで並びます。これからのイベントも、ここに増えていきます", "The Weekly Challenge button on the title screen is now “Events” — live events appear as banners, and more are on the way"],
+      ["週替わりチャレンジの画面を作り直しました。今週の切り札が大きく出て、終了までの時間が分かります。ランキングは称号とアイコンの枠つきです", "The Weekly Challenge screen is redesigned: this week’s ace up front, a countdown to the end, and a ranking with titles and avatar frames"],
+      ["勝った相手の顔アイコン「チャレンジの顔」は、「討伐の証」という名前になりました", "Challenge face avatars are now called “Trophies”"],
+    ]],
+    ["2026-10-25", "Ver 2.3.2", ["試練の塔の最初のデッキを見直し", "Tower of Trials starter decks reworked"], [
+      ["試練の塔の最初のデッキに、どの属性でも「落とし穴」（防御モードの相手1体を破壊）を1枚入れました。守りを固められても崩せます", "Every Tower starter deck now has a Pitfall (destroy 1 enemy monster in Defense Mode), so walls can be broken"],
+      ["最初のデッキのうち2枚が、登るたびにランダムで変わるようになりました", "Two cards in the starter deck now change at random every climb"],
+      ["水のデッキの「威圧」を「挑発」に変えました", "The water starter deck’s Intimidate is now Provoke"],
+      ["勝ったあとのカードを選ぶ画面に、「これにする」ボタンを付けました", "Added a “Take this” button on the card-choice screen after a win"],
+      ["不具合を調べるため、ゲームの中でエラーが起きたときに、その場所だけを匿名で送るようにしました（設定 → データ で止められます）", "To track down bugs, the game now sends only where an error happened, anonymously (you can turn this off in Settings → Data)"],
+    ]],
+    ["2026-10-23", "Ver 2.3.1", ["はじめての人はすぐ対戦へ", "New players start battling right away"], [
+      ["はじめて開いた人は、名前を決める前に、すぐ最初の対戦が始まるようにしました（名前は対戦のあとで決めます）", "First-time players now jump straight into their first battle; you choose your name afterwards"],
+      ["覚醒したトゲの門番・積み木のゴーレムのトゲが、倒されたときも攻撃してきた相手に効くようにしました（カードの文のとおり）", "The thorns of awakened Thorn Gatekeeper and Block Golem now hit the attacker even when they are destroyed, as the card text says"],
+    ]],
+    ["2026-10-22", "Ver 2.3.0", ["試練の塔に限定カードと特別なボス", "Tower-exclusive cards and special bosses"], [
+      ["試練の塔だけで手に入る限定カードを追加しました（全8枚・どれも1枚まで）", "Added cards you can only get in the Tower of Trials (8 in all, one copy each)"],
+      ["はじめて頂上に着く前に、最後の相手として「工房の主 ゼンジ」が待っています", "Before your first summit, Zenji the workshop master waits as your final opponent"],
+      ["塔の階位3・6・10の最後には、特別なボス（塔の記録係 シオリ・終わらぬ挑戦者 グレン・頂の結晶 プリズマ）が待っています。勝つと、そのボスのカードがもらえます", "At Tower ranks 3, 6 and 10, a special boss waits at the top (Shiori, Glen and Prisma). Beat one to get their card"],
+      ["同じ属性のデッキで、ちがうリーダー3人が頂上に着くと、その属性の「風」のカードがもらえます", "Reach the top with three different leaders using the same element’s deck to get that element’s Wind card"],
+      ["塔のふもとに「ミッション」を置きました。もう条件を満たしている人は、ボタンを押して受け取ってください（赤い丸が目印です）", "Added “Missions” at the foot of the tower. If you’ve already met a goal, just tap to claim it (look for the red dot)"],
+      ["いくつかの不具合を修正しました", "Fixed a few bugs"],
+    ]],
+    ["2026-10-20", "Ver 2.2.0", ["新モード「試練の塔」（β版）", "New mode: Tower of Trials (beta)"], [
+      ["タイトルに「試練の塔」を追加しました。15枚の小さなデッキで、3章・36階の頂上をめざすモードです（冒険のエリア10をクリアすると遊べます）", "New on the title screen: Tower of Trials. Climb 3 acts and 36 floors with a small 15-card deck (unlocks after clearing Adventure Area 10)"],
+      ["勝つたびにカードを手に入れてデッキを育て、リーダーの技は1戦に1回使えます。章のボスを倒すと、そのボスがリーダーとして仲間になります", "Win to collect cards and grow your deck. Your leader’s skill works once per battle, and defeated act bosses join you as leaders"],
+      ["勝つと星屑がもらえます（いつものモードで使えます）。頂上に着くと、星屑のおまけ・称号・新しい形のアイコンの枠がもらえます", "Wins earn Stardust for the main game. Reach the top for bonus Stardust, a title and a new-shaped icon frame"],
+      ["登っている途中で「中断」すると、次に塔へ入ったとき続きから遊べます（対戦中に中断した戦いは、最初からになります）", "Press “Pause” mid-climb and continue next time you enter the tower (a battle paused midway restarts from the beginning)"],
+      ["塔のふもとと、登っている途中の上の帯に「遊び方」を置きました", "Added “How to play” at the foot of the tower and in the top bar while climbing"],
+      ["キャラのカードの絵の位置を見直して、顔が見えやすくなりました", "Re-framed the character card art so faces are easier to see"],
+      ["週替わりチャレンジのランキングを、6位から下も見られるようにしました", "The Weekly Challenge ranking now shows 6th place and below"],
+      ["試練の塔の地図：部屋のまんなかに相手の顔、右下に相手の属性を出しました。風の部屋は、丸のまわりを風が回ります。塔にいるあいだは曲が途切れないようにしました", "Tower map: rooms now show the enemy’s face in the middle and its element at the lower right. Windy rooms have wind circling them. The music no longer cuts between tower screens"],
+      ["はじめて試練の塔に入ると、ゼンジが画面の上で遊び方を案内します（遊び方の窓から、もう一度見られます）", "First time in the tower, Zenji walks you through it on screen (replay it from “How to play”)"],
+      ["PLiCy で、対戦の右上の「投了」などがPLiCyのボタンに隠れて押せなかったのを直しました", "On PLiCy, the top-right battle buttons (like Surrender) were hidden under PLiCy’s own buttons — fixed"],
+      ["試練の塔：章の後半（7階から）で、次の弾のカードが出るようにしました（1章後半で第3弾、2章で第4弾、2章後半で第5弾、3章で第6弾）", "Tower: the next set’s cards now appear from floor 7 of each act (Set 3 late in Act 1, Set 4 in Act 2, Set 5 late in Act 2, Set 6 in Act 3)"],
+      ["対戦の下のボタンを見やすくしました。「鍛錬」とリーダーの技は、長押し（PCは右クリック）で説明が見られます", "Tidied the battle buttons. Long-press (right-click on PC) Forge or a leader skill to see what it does"],
+      ["β版のため、これから調整していきます。塔のふもとの「感想を送る」から、ボタンを押すだけで感想を送れます", "It’s a beta and will keep changing. Use “Send feedback” at the foot of the tower to tell us what you think with a tap"],
+      ["β版のため、これから調整していきます", "It’s a beta and will keep changing"],
+    ]],
     ["2026-10-17", "Ver 2.1.8", ["キャラのカットイン・ダブりを星屑に", "Character cut-ins and duplicates to Stardust"], [
       ["■対戦", "■Battle"],
       ["キャラカード（30人）を出すと、そのキャラの全身の絵が画面に現れて、名前と決めゼリフが出ます（1秒ちょっと）。盤面は透けて見えたままで、画面を押すとすぐ飛ばせます。相手が出したときも出ます。", "Playing any of the 30 character cards brings that character's full-body art on screen with their name and a catchphrase (just over a second). The board stays visible underneath, and a tap skips it. It also plays when your opponent plays one."],
