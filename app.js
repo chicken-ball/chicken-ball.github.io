@@ -147,6 +147,9 @@
 
   // ---- 更新履歴 ----
   var UPDATES = [
+    ["2026-10-30", "Ver 2.6.1", ["検索の欄で日本語が打ちやすく", "Typing in the search box"], [
+      ["カードを探す欄で、日本語を変換している途中に確定してしまう不具合を直しました（ひとことの声から）", "Fixed the card search box confirming Japanese input before you finished converting it (from player feedback)"],
+    ]],
     ["2026-10-29", "Ver 2.6.0", ["カードショップとパック開封が新しく", "A new Card Shop and pack opening"], [
       ["カードショップがお店になりました。棚のパックを押すと大きく見られて、左右にめくれます。まだ持っていないカードと、集めた枚数も見られます", "The Card Shop is now a real shop. Tap a pack on the shelf to see it up close and swipe through the others, with the cards you don’t have yet and how many you’ve collected"],
       ["日替わりのセール（ひとり1日1つ）と、5パックまとめ買い（1パックぶんお得）を足しました。ダブったカードの買取もお店の中にあります", "Added a daily sale (one per player per day) and a 5-pack bundle (one pack cheaper). Duplicate buyback is in the shop too"],
