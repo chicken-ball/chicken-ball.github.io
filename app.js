@@ -147,6 +147,16 @@
 
   // ---- 更新履歴 ----
   var UPDATES = [
+    ["2026-10-29", "Ver 2.6.0", ["カードショップとパック開封が新しく", "A new Card Shop and pack opening"], [
+      ["カードショップがお店になりました。棚のパックを押すと大きく見られて、左右にめくれます。まだ持っていないカードと、集めた枚数も見られます", "The Card Shop is now a real shop. Tap a pack on the shelf to see it up close and swipe through the others, with the cards you don’t have yet and how many you’ve collected"],
+      ["日替わりのセール（ひとり1日1つ）と、5パックまとめ買い（1パックぶんお得）を足しました。ダブったカードの買取もお店の中にあります", "Added a daily sale (one per player per day) and a 5-pack bundle (one pack cheaper). Duplicate buyback is in the shop too"],
+      ["火・木・日は旅の商人が来ます。火曜は炎・水・草のパック、木曜はサポートパックとプリズムパックのセール、日曜は前に景品で配った絵違いを1枚（11/1から）", "A traveling merchant visits on Tue, Thu and Sun: Fire, Water and Grass Packs on Tuesday, Support Packs and a Prism Pack sale on Thursday, and one past alt-art prize on Sunday (from Nov 1)"],
+      ["パックの開け方を作り直しました。上の帯を横に切って開け、1枚ずつ大きくめくります。「すぐ開ける」も選べます", "Pack opening is all new: slice the top strip, then flip the cards one by one up close. You can also choose to open quickly"],
+      ["第1〜6弾とプリズムパックに、新しいパックの絵を付けました", "New pack art for Sets 1–6 and the Prism Pack"],
+      ["第1〜3弾のパックの名前を、図鑑の弾の名前にそろえました", "Set 1–3 packs now use the same names as the sets in the Library"],
+      ["試練の塔：炎の最初のデッキの火吹きヒナを1枚、火炎弾にしました（ひとことの声から）", "Tower of Trials: the Fire starting deck swaps one Fire-Breathing Chick for a Fireball (from player feedback)"],
+      ["いくつかの不具合を修正しました", "Fixed a few bugs"],
+    ]],
     ["2026-10-27", "Ver 2.5.0", ["カードの見直し・デッキ20個・攻撃の予約", "Card refresh, 20 deck slots and queued attacks"], [
       ["あまり使われていなかったカード10枚を見直しました", "Reworked 10 underused cards"],
       ["山札から探すカード：輪廻の環（コスト2以下の草モンスター2枚・2コストに）、継承の軍旗（【旗】のモンスター2枚まで・3コストに）、静かな継承（【継承】のモンスター2枚まで）、隊列を組め（【隊列】のモンスター1枚）、忘れ形見のクラゲ（断末魔で【継承】のカード1枚）", "Deck-search cards: Circle of Rebirth (2 Grass monsters costing 2 or less, now 2 cost), Banner of Succession (up to 2 [Banner] monsters, now 3 cost), Quiet Succession (up to 2 [Legacy] monsters), Fall In! (a [Formation] monster), Keepsake Jelly (Last Breath: a [Legacy] card)"],
