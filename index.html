@@ -29,6 +29,7 @@
     <a href="#modes"><span lang="ja">モード</span><span lang="en">Modes</span></a>
     <a href="#rivals"><span lang="ja">ライバル</span><span lang="en">Rivals</span></a>
     <a href="#cards"><span lang="ja">カード</span><span lang="en">Cards</span></a>
+    <a href="#balance"><span lang="ja">カードの調整</span><span lang="en">Card changes</span></a>
     <a href="#updates"><span lang="ja">更新履歴</span><span lang="en">Updates</span></a>
     <a href="#voice"><span lang="ja">声を届ける</span><span lang="en">Feedback</span></a>
   </nav>
@@ -192,6 +193,16 @@
   </div>
 </section>
 
+<!-- ===== カードの調整（中身は balance.js。ゲームの src/game/balance_notes.js から tools/site_balance.mjs で作る） ===== -->
+<section id="balance" class="balance">
+  <div class="wrap">
+    <h2><span lang="ja">カードの調整</span><span lang="en">Card changes</span></h2>
+    <p class="sub" lang="ja">カードの効果や数字を変えたときの、調整前と調整後です。新しいものが上です。</p>
+    <p class="sub" lang="en">Every card we’ve changed, shown before and after. Newest first.</p>
+    <div id="ballist" class="ballist"></div>
+  </div>
+</section>
+
 <!-- ===== 更新履歴 ===== -->
 <section id="updates" class="updates">
   <div class="wrap">
@@ -234,6 +245,7 @@
 </footer>
 
 <script src="decks.js"></script>
+<script src="balance.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

@@ -443,6 +443,96 @@
     }).join('');
   }
 
+  // ---- カードの調整（balance.js。ゲームのお知らせの「調整したカード」の窓と同じ中身。2026-10-30） ----
+  var BAL_KIND = { up: ['強化', 'Buff'], down: ['弱体化', 'Nerf'], change: ['変更', 'Reworked'] };
+  // 調整前と後の効果文の、変わったところに印を付ける。日本語は1字ずつ、英語は1語ずつ（【キーワード】と +2/+2 はひとかたまり）。ほとんど全部変わったときは印を付けない
+  function balDiff(a, b) {
+    var ja = /[\u3000-\u9fff\uff00-\uffef]/.test(a + b);
+    var re = ja ? /【[^】]*】|[+-]?\d+(?:\/[+-]?\d+)?|[\s\S]/g : /\[[^\]]*\]|[+-]?\d+(?:\/[+-]?\d+)?|\w+|\s+|[\s\S]/g;
+    var x = a.match(re) || [], y = b.match(re) || [], n = x.length, m = y.length, i, j, d = [];
+    for (i = 0; i <= n; i++) d.push(new Uint16Array(m + 1));
+    for (i = n - 1; i >= 0; i--) for (j = m - 1; j >= 0; j--) d[i][j] = x[i] === y[j] ? d[i + 1][j + 1] + 1 : Math.max(d[i + 1][j], d[i][j + 1]);
+    var runs = [];
+    function put(k, s) { var r = runs[runs.length - 1]; if (r && r.k === k) r.s += s; else runs.push({ k: k, s: s }); }
+    for (i = 0, j = 0; i < n || j < m;) {
+      if (i < n && j < m && x[i] === y[j]) { put('=', x[i]); i++; j++; }
+      else if (j >= m || (i < n && d[i + 1][j] >= d[i][j + 1])) put('-', x[i++]);
+      else put('+', y[j++]);
+    }
+    var same = runs.reduce(function (t, r) { return t + (r.k === '=' ? r.s.length : 0); }, 0);
+    if (same < 0.3 * Math.max(a.length, b.length)) return [esc(a), esc(b)];
+    function short(s) { return ja ? s.trim().length <= 2 : s.trim().split(/\s+/).filter(Boolean).length <= 1; }
+    function side(drop) {
+      var out = [];
+      runs.forEach(function (r, k) {
+        if (r.k === drop) return;
+        var mid = r.k === '=' && k > 0 && k < runs.length - 1 && runs[k - 1].k !== '=' && runs[k + 1].k !== '=' && short(r.s);
+        var on = r.k !== '=' || mid, o = out[out.length - 1];
+        if (o && o.on === on) o.s += r.s; else out.push({ on: on, s: r.s });
+      });
+      var tag = drop === '+' ? 'del' : 'ins';
+      return out.map(function (o) { return o.on ? '<' + tag + '>' + esc(o.s) + '</' + tag + '>' : esc(o.s); }).join('');
+    }
+    return [side('+'), side('-')];
+  }
+  // 数字とキーワードの変わったところ。遊ぶ側に得なら up、損なら down
+  function balChips(b, a) {
+    var out = [];
+    function num(label, x, y, lowIsGood) {
+      if (x == null || y == null || x === y) return;
+      out.push('<span class="bal-chip ' + ((lowIsGood ? y < x : y > x) ? 'up' : 'down') + '">' + label + ' <s>' + x + '</s><i>→</i><b>' + y + '</b></span>');
+    }
+    num(T('コスト', 'Cost'), b.cost, a.cost, true);
+    num(T('攻撃力', 'ATK'), b.atk, a.atk);
+    num(T('防御力', 'DEF'), b.def, a.def);
+    var ak = a.kw.map(function (k) { return k.key; }), bk = b.kw.map(function (k) { return k.key; });
+    b.kw.filter(function (k) { return ak.indexOf(k.key) < 0; }).forEach(function (k) { out.push('<span class="bal-chip down">' + esc(T('【' + k.ja + '】がなくなった', 'Lost [' + k.en + ']')) + '</span>'); });
+    a.kw.filter(function (k) { return bk.indexOf(k.key) < 0; }).forEach(function (k) { out.push('<span class="bal-chip up">' + esc(T('【' + k.ja + '】がついた', 'Gained [' + k.en + ']')) + '</span>'); });
+    if (b.text.ja !== a.text.ja) out.push('<span class="bal-chip eff">' + T('効果の文が変わった', 'Effect text changed') + '</span>');
+    return out.join('');
+  }
+  // 小さなカード（名前・コスト・絵・攻守）。効果の文は小さなカードでは切れるので、下の行に出す
+  function balCard(c, s) {
+    return '<div class="ccard ' + c.element + (c.rarity === 'legend' ? ' legend' : '') + '">'
+      + '<span class="nm">' + esc(T(c.name.ja, c.name.en)) + '</span><span class="cost">' + s.cost + '</span>'
+      + '<img src="assets/cards/' + c.id + '.webp" alt="" loading="lazy" width="300" height="300">'
+      + (c.support ? '<span class="st sup">' + T('✦ サポート', '✦ Support') + '</span>'
+        : '<span class="st"><span class="a">⚔ ' + s.atk + '</span><span class="d">🛡 ' + s.def + '</span></span>') + '</div>';
+  }
+  function balItem(c) {
+    var kind = BAL_KIND[c.kind] ? c.kind : 'change';
+    var changed = c.before.text.ja !== c.after.text.ja;
+    var t = changed ? balDiff(T(c.before.text.ja, c.before.text.en), T(c.after.text.ja, c.after.text.en)) : null;
+    var row = function (cls, lab, html) { return '<div class="bt-row ' + cls + '"><span class="bt-lab">' + lab + '</span><p>' + html + '</p></div>'; };
+    return '<article class="balitem">'
+      + '<div class="bal-h"><span class="bal-kind ' + kind + '">' + T(BAL_KIND[kind][0], BAL_KIND[kind][1]) + '</span><h4 class="' + c.element + '">' + esc(T(c.name.ja, c.name.en)) + '</h4></div>'
+      + '<div class="bal-pair"><figure class="bal-side before"><figcaption>' + T('調整前', 'Before') + '</figcaption>' + balCard(c, c.before) + '</figure>'
+      + '<span class="bal-arrow" aria-hidden="true">▶</span>'
+      + '<figure class="bal-side after"><figcaption>' + T('調整後', 'After') + '</figcaption>' + balCard(c, c.after) + '</figure></div>'
+      + '<div class="bal-chips">' + balChips(c.before, c.after) + '</div>'
+      + '<div class="bal-text">' + (t ? row('before', T('調整前', 'Before'), t[0]) + row('after', T('調整後', 'After'), t[1])
+        : row('same', T('効果（同じ）', 'Effect (same)'), esc(T(c.after.text.ja, c.after.text.en)))) + '</div>'
+      + (c.why ? '<p class="bal-why">' + esc(T(c.why.ja, c.why.en)) + '</p>' : '')
+      + '</article>';
+  }
+  function renderBalance() {
+    var N = window.TE_BALANCE || [], box = document.getElementById('ballist');
+    if (!box) return;
+    if (!N.length) { document.getElementById('balance').hidden = true; return; }
+    // 開いていた回は、言語を切り替えて描き直しても開いたまま
+    var open = {};
+    box.querySelectorAll('details').forEach(function (d) { open[d.dataset.id] = d.open; });
+    box.innerHTML = N.map(function (n, i) {
+      var count = function (k) { return n.cards.filter(function (c) { return (BAL_KIND[c.kind] ? c.kind : 'change') === k; }).length; };
+      var isOpen = n.id in open ? open[n.id] : i === 0;
+      return '<details class="balnote" data-id="' + esc(n.id) + '"' + (isOpen ? ' open' : '') + '><summary><time>' + esc(n.date) + '</time>'
+        + '<h3>' + esc(T(n.title.ja, n.title.en)) + '</h3>'
+        + '<span class="bal-sum">' + ['up', 'down', 'change'].filter(count).map(function (k) { return '<span class="bal-kind ' + k + '">' + T(BAL_KIND[k][0], BAL_KIND[k][1]) + ' ' + count(k) + '</span>'; }).join('') + '</span></summary>'
+        + (n.intro ? '<p class="bal-intro">' + esc(T(n.intro.ja, n.intro.en)) + '</p>' : '')
+        + '<div class="balgrid">' + n.cards.map(balItem).join('') + '</div></details>';
+    }).join('');
+  }
+
   // ---- 声を届ける（サーバー経由で作者へ。アドレスは出さない） ----
   var form = document.getElementById('voiceform'), msg = document.getElementById('formmsg');
   form.addEventListener('submit', function (ev) {
@@ -462,6 +552,6 @@
     }).finally(function () { b.disabled = false; });
   });
 
-  function renderAll() { renderDecks(); renderRivals(); renderCards(); renderShots(); renderUpdates(); }
+  function renderAll() { renderDecks(); renderRivals(); renderCards(); renderShots(); renderBalance(); renderUpdates(); }
   applyLang(lang);
 })();

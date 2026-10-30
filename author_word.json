@@ -1,5 +1,5 @@
 {
- "date": "2026-10-26",
+ "date": "2026-10-30",
  "title": {
   "ja": "小さきものの行進、10/29（木）から！",
   "en": "March of the Small starts Oct 29!"
@@ -16,6 +16,10 @@
   {
    "ja": "勝つと「小さきものの印」がたまり（1日3つまで）、9つで絵違い「群れの先達」がもらえます。毎日少しずつ遊んでみてください。",
    "en": "Win battles to collect Marks of the Small (up to 3 a day). Nine marks earn the alt-art Herd Leader, so try a little each day!"
+  },
+  {
+   "ja": "ひとことで「カードを調整したときは、調整前と調整後を見比べたい」という声をいただきました。調整したカードを、絵つきで前と後に並べて見られる窓を、近々ゲームのお知らせに入れます。それまでは、ホームページの「カードの調整」で見られます。",
+   "en": "A player asked to compare cards before and after they’re changed. A window that shows changed cards side by side, art and all, is coming to the in-game News soon. Until then, you can see them on the website under “Card changes.”"
   },
   {
    "ja": "感想や、次に遊びたい決まりは、設定の「ひとこと」から送ってください。",
