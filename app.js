@@ -147,6 +147,12 @@
 
   // ---- 更新履歴 ----
   var UPDATES = [
+    ["2026-10-31", "Ver 2.6.2", ["カードの調整の窓・不具合の修正・新しいレギュレーション戦", "Card-change window, a battle fix, and a new Regulation Battle"], [
+      ["カードの調整のお知らせに「調整したカードを見る」ボタンがつきました。イラストと、調整前後の効果を見比べられます", "Card-change news now has a “See the changed cards” button that shows the card art and the effects before and after."],
+      ["11/5（木）〜11/11（水）は、レギュレーション戦「鉄旗の陣」。第4弾のカードだけで戦います", "Nov 5–11: the Regulation Battle “Iron Banner Formation”. Only Set 4 cards may be used."],
+      ["対戦中、押した瞬間に札が変わると、画面が止まることがあった不具合を直しました", "Fixed a bug where the battle screen could freeze if a card changed at the moment you tapped."],
+      ["文章の変な改行を直しました", "Fixed awkward line breaks in text."]
+    ]],
     ["2026-10-30", "Ver 2.6.1", ["検索の欄で日本語が打ちやすく", "Typing in the search box"], [
       ["カードを探す欄で、日本語を変換している途中に確定してしまう不具合を直しました（ひとことの声から）", "Fixed the card search box confirming Japanese input before you finished converting it (from player feedback)"],
     ]],
