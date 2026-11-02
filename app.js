@@ -147,6 +147,13 @@
 
   // ---- 更新履歴 ----
   var UPDATES = [
+    ["2026-11-03", "Ver 2.7.0", ["みんなのデッキにスタンプ・新着の印", "Stamps and “new” marks for Shared Decks"], [
+      ["みんなのデッキで、人のデッキに6種類のスタンプを押せるようになりました。押された数は一覧にも出ます", "In Shared Decks you can now send one of six stamps to someone’s deck. Stamp counts show in the list too."],
+      ["新しいデッキが投稿されると、タイトルの「みんなのデッキ」に新着の印がつきます", "When a new deck is posted, Shared Decks on the title screen gets a “new” mark."],
+      ["旅の商人が来た日は、タイトルのショップに印がつきます。日曜の絵違いは、店の中の「絵違い入荷」の札から見つけられます", "On days the traveling merchant visits, the Shop on the title screen gets a mark. On Sundays, the “Alt art” sign in the shop takes you to that day’s card."],
+      ["週替わりチャレンジの画面を見やすくしました（今週と先の3週・討伐の証は別の窓）", "The Weekly Challenge screen is easier to read (this week and the next three; trophies in their own window)."],
+      ["相手のAIが【大物食い】を上手に使うようになりました", "Opponent AI now makes better use of [Giant Slayer]."]
+    ]],
     ["2026-10-31", "Ver 2.6.2", ["カードの調整の窓・不具合の修正・新しいレギュレーション戦", "Card-change window, a battle fix, and a new Regulation Battle"], [
       ["カードの調整のお知らせに「調整したカードを見る」ボタンがつきました。イラストと、調整前後の効果を見比べられます", "Card-change news now has a “See the changed cards” button that shows the card art and the effects before and after."],
       ["11/5（木）〜11/11（水）は、レギュレーション戦「鉄旗の陣」。第4弾のカードだけで戦います", "Nov 5–11: the Regulation Battle “Iron Banner Formation”. Only Set 4 cards may be used."],
