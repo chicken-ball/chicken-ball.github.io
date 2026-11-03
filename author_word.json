@@ -1,13 +1,17 @@
 {
- "date": "2026-10-31",
+ "date": "2026-11-03",
  "title": {
-  "ja": "鉄旗の陣、11/5（木）から！",
-  "en": "Iron Banner Formation starts Nov 5!"
+  "ja": "塔の直しと、11/5からの鉄旗の陣",
+  "en": "A Tower fix, and Iron Banner from Nov 5"
  },
  "body": [
   {
    "ja": "いつも遊んでくれてありがとうございます！",
    "en": "Thank you, as always, for playing!"
+  },
+  {
+   "ja": "ひとことありがとうございます。試練の塔で「これにする」が押せない件について、調査し修正いたしました（小さめのスマホで、はじめての案内が画面の外に出ていました）。まだできないようなら、大変お手数ですが、もう一度ひとことを入れていただけると幸いです。",
+   "en": "Thank you for your message. We looked into the Tower of Trials issue where “Take this” could not be pressed, and fixed it (on smaller phones, the first-time guide was appearing off-screen). If it still doesn’t work, we’d be grateful if you could send us another message."
   },
   {
    "ja": "小さきものの行進を遊んでくれて、ありがとうございます。11/5（木）から1週間は、次のレギュレーション戦「鉄旗の陣」です。第4弾のカードだけで戦います。",
