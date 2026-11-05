@@ -147,6 +147,12 @@
 
   // ---- 更新履歴 ----
   var UPDATES = [
+    ["2026-11-05", "Ver 2.7.2", ["キャラのイベント「おもちゃの国の腕くらべ」", "Character Event: Toyland Showdown"], [
+      ["11/7（土）〜11/20（金）は、キャラのイベント「おもちゃの国の腕くらべ」。おもちゃの国のトトに4つの強さで挑みます（1日2回）", "Nov 7–20: the Character Event “Toyland Showdown”. Take on Toto of Toyland at four levels (two tries a day)."],
+      ["勝つたびに次の強さが開きます。景品は星屑・称号・アイコン、いちばん上の「達人」に勝つとカード「おもちゃの国のトト」", "Each win opens the next level. Prizes: Stardust, a title, an avatar, and the card “Toto of Toyland” for beating Master."],
+      ["みんなのデッキの一覧で、スタンプを文字入りの札で大きく見せるようにしました", "Stamps in the Shared Decks list are now shown larger, as labeled tags."],
+      ["試練の塔で、はじめての案内が小さい画面のスマホで画面の外に出て、先に進めなくなることがあったのを直しました（2.7.1）", "Fixed the first-time Tower guide going off-screen on small phones and blocking progress (2.7.1)."]
+    ]],
     ["2026-11-03", "Ver 2.7.0", ["みんなのデッキにスタンプ・新着の印", "Stamps and “new” marks for Shared Decks"], [
       ["みんなのデッキで、人のデッキに6種類のスタンプを押せるようになりました。押された数は一覧にも出ます", "In Shared Decks you can now send one of six stamps to someone’s deck. Stamp counts show in the list too."],
       ["新しいデッキが投稿されると、タイトルの「みんなのデッキ」に新着の印がつきます", "When a new deck is posted, Shared Decks on the title screen gets a “new” mark."],
