@@ -1,8 +1,8 @@
 {
- "date": "2026-11-03",
+ "date": "2026-11-05",
  "title": {
-  "ja": "塔の直しと、11/5からの鉄旗の陣",
-  "en": "A Tower fix, and Iron Banner from Nov 5"
+  "ja": "鉄旗の陣、はじまりました",
+  "en": "Iron Banner has begun"
  },
  "body": [
   {
@@ -14,12 +14,12 @@
    "en": "Thank you for your message. We looked into the Tower of Trials issue where “Take this” could not be pressed, and fixed it (on smaller phones, the first-time guide was appearing off-screen). If it still doesn’t work, we’d be grateful if you could send us another message."
   },
   {
-   "ja": "小さきものの行進を遊んでくれて、ありがとうございます。11/5（木）から1週間は、次のレギュレーション戦「鉄旗の陣」です。第4弾のカードだけで戦います。",
-   "en": "Thank you for playing March of the Small. From Nov 5 (Thu) for one week, the next Regulation Battle, “Iron Banner Formation”, is on — only Set 4 cards may be used."
+   "ja": "小さきものの行進を遊んでくれて、ありがとうございます。今日11/5（木）から11/11（水）までは、次のレギュレーション戦「鉄旗の陣」です。第4弾のカードだけで戦います。",
+   "en": "Thank you for playing March of the Small. From today, Nov 5 (Thu), through Nov 11 (Wed), the next Regulation Battle, “Iron Banner Formation”, is on — only Set 4 cards may be used."
   },
   {
-   "ja": "勝つと「鉄旗の印」がたまり（1日3つまで）、9つで絵違いカードがもらえます。絵は準備中で、できしだい届きます。",
-   "en": "Win battles to collect Iron Banner Marks (up to 3 a day). Nine marks earn an alt-art card — the art is still being made and will arrive as soon as it is ready."
+   "ja": "勝つと「鉄旗の印」がたまり（1日3つまで）、9つで「大樹の旗手」の絵違いカードがもらえます。",
+   "en": "Win battles to collect Iron Banner Marks (up to 3 a day). Nine marks earn an alt-art Great Tree Bannerbearer."
   },
   {
    "ja": "ひとことでいただいた「調整前と調整後を見比べたい」という声から、調整したカードを絵つきで見られる窓を、ゲームのお知らせに入れました。「カードの調整」のお知らせの「調整したカードを見る」から開けます。",
