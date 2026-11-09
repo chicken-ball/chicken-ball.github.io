@@ -1,8 +1,8 @@
 {
- "date": "2026-11-05",
+ "date": "2026-11-09",
  "title": {
-  "ja": "鉄旗の陣、はじまりました",
-  "en": "Iron Banner has begun"
+  "ja": "第7弾、つくっています",
+  "en": "Set 7 is in the works"
  },
  "body": [
   {
@@ -10,20 +10,20 @@
    "en": "Thank you, as always, for playing!"
   },
   {
-   "ja": "ひとことありがとうございます。試練の塔で「これにする」が押せない件について、調査し修正いたしました（小さめのスマホで、はじめての案内が画面の外に出ていました）。まだできないようなら、大変お手数ですが、もう一度ひとことを入れていただけると幸いです。",
-   "en": "Thank you for your message. We looked into the Tower of Trials issue where “Take this” could not be pressed, and fixed it (on smaller phones, the first-time guide was appearing off-screen). If it still doesn’t work, we’d be grateful if you could send us another message."
+   "ja": "いま、第7弾『おくりびの夜』をつくっています。テーマは「倒れても、何かを残していく」。倒れたあとに小さな仲間を残したり、次のカードに力をつないだりするモンスターたちです。",
+   "en": "Set 7, “Night of Sending-off Fires”, is in the works. Its theme is “leaving something behind, even after falling”: monsters that leave little companions behind when they fall, or pass their strength on to the next card."
   },
   {
-   "ja": "小さきものの行進を遊んでくれて、ありがとうございます。今日11/5（木）から11/11（水）までは、次のレギュレーション戦「鉄旗の陣」です。第4弾のカードだけで戦います。",
-   "en": "Thank you for playing March of the Small. From today, Nov 5 (Thu), through Nov 11 (Wed), the next Regulation Battle, “Iron Banner Formation”, is on — only Set 4 cards may be used."
+   "ja": "カードの絵はそろいました。いまは強さを調整しながら、作者が遊んで試しています。公開はもう少し先ですが、楽しみにしていてください。",
+   "en": "All the card art is in. Right now I’m playtesting and fine-tuning their strength. It’s still a little way off, but I hope you’re looking forward to it."
   },
   {
-   "ja": "勝つと「鉄旗の印」がたまり（1日3つまで）、9つで「大樹の旗手」の絵違いカードがもらえます。",
-   "en": "Win battles to collect Iron Banner Marks (up to 3 a day). Nine marks earn an alt-art Great Tree Bannerbearer."
+   "ja": "キャラのイベント「おもちゃの国の腕くらべ」は 11/20（木）までです。トトとテディオンとの対戦はいかがですか？ 感想をお待ちしています。",
+   "en": "The character event “Toyland Showdown” runs until Nov 20 (Thu). How are your battles with Toto and Teddion going? I’d love to hear what you think."
   },
   {
-   "ja": "ひとことでいただいた「調整前と調整後を見比べたい」という声から、調整したカードを絵つきで見られる窓を、ゲームのお知らせに入れました。「カードの調整」のお知らせの「調整したカードを見る」から開けます。",
-   "en": "Following a player’s request to compare cards before and after a change, the in-game News now has a window that shows changed cards with their art. Open it with “See the changed cards” in a Card Changes news item."
+   "ja": "レギュレーション戦「鉄旗の陣」は 11/11（水）までです。鉄旗の印を9つ集めると、「大樹の旗手」の絵違いカードがもらえます。",
+   "en": "The Regulation Battle “Iron Banner Formation” runs until Nov 11 (Wed). Collect nine Iron Banner Marks to earn an alt-art Great Tree Bannerbearer."
   },
   {
    "ja": "感想や、次に遊びたい決まりは、設定の「ひとこと」から送ってください。",
