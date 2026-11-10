@@ -147,6 +147,14 @@
 
   // ---- 更新履歴 ----
   var UPDATES = [
+    ["2026-11-10", "Ver 2.8.0", ["第7弾『おくりびの夜』", "Set 7: Night of the Sending Fires"], [
+      ["第7弾『おくりびの夜』を追加しました。倒れたあとに何かを残す【断末魔】のモンスターたち24枚。パックはエリア10をクリアすると、ショップに星屑6で並びます", "Added Set 7, “Night of the Sending Fires”: 24 cards led by monsters whose [Last Breath] leaves something behind. Its pack appears in the Shop for 6 Stardust once you clear Area 10."],
+      ["【断末魔】で倒れた枠に出るモンスターは、相手のターンに倒れたときは防御モードで出ます", "Monsters that appear in the fallen monster’s slot through [Last Breath] come out in Defense Mode if it fell during your opponent’s turn."],
+      ["トークン（クレヨンの落書きなど）は、手札や山札に戻るときに消えるようになりました", "Tokens (such as Crayon Doodle) now vanish when they would return to your hand or deck."],
+      ["コストが1下がる効果は、手札の同じカードのうち1枚だけにかかるように直しました。縦画面の手札でカードの名前が見やすくなりました", "Cost reductions now apply to just one copy in your hand, and card names in your hand are easier to read in portrait mode."],
+      ["ねじまきの鍵の説明を実際の動きに合わせ、投了したあとに結果の窓が別の画面に出ることがあった不具合を直しました", "Winding Key’s text now matches what it does, and fixed a result window that could pop up on another screen after conceding."],
+      ["レギュレーション戦は 11/19（木）から「つぎはぎの宴」、11/26（木）から「継ぐ者たち」", "Regulation Battles: “Patchwork Feast” from Nov 19 (Thu) and “The Heirs” from Nov 26 (Thu)."],
+    ]],
     ["2026-11-05", "Ver 2.7.2", ["キャラのイベント「おもちゃの国の腕くらべ」", "Character Event: Toyland Showdown"], [
       ["11/7（土）〜11/20（金）は、キャラのイベント「おもちゃの国の腕くらべ」。おもちゃの国のトトに4つの強さで挑みます（1日2回）", "Nov 7–20: the Character Event “Toyland Showdown”. Take on Toto of Toyland at four levels (two tries a day)."],
       ["勝つたびに次の強さが開きます。景品は星屑・称号・アイコン、いちばん上の「達人」に勝つとカード「おもちゃの国のトト」", "Each win opens the next level. Prizes: Stardust, a title, an avatar, and the card “Toto of Toyland” for beating Master."],

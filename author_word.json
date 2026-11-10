@@ -1,8 +1,8 @@
 {
- "date": "2026-11-09",
+ "date": "2026-11-10",
  "title": {
-  "ja": "第7弾、つくっています",
-  "en": "Set 7 is in the works"
+  "ja": "第7弾『おくりびの夜』、はじまりました",
+  "en": "Set 7, “Night of the Sending Fires”, is here"
  },
  "body": [
   {
@@ -10,24 +10,24 @@
    "en": "Thank you, as always, for playing!"
   },
   {
-   "ja": "いま、第7弾『おくりびの夜』をつくっています。テーマは「倒れても、何かを残していく」。倒れたあとに小さな仲間を残したり、次のカードに力をつないだりするモンスターたちです。",
-   "en": "Set 7, “Night of Sending-off Fires”, is in the works. Its theme is “leaving something behind, even after falling”: monsters that leave little companions behind when they fall, or pass their strength on to the next card."
+   "ja": "第7弾『おくりびの夜』を公開しました。テーマは「倒れても、何かを残していく」。倒れたあとに小さな仲間を残したり、次のカードに力をつないだりするモンスターたち24枚です。",
+   "en": "Set 7, “Night of the Sending Fires”, is out now. Its theme is “leaving something behind, even after falling”: 24 cards, with monsters that leave little companions behind when they fall, or pass their strength on to the next card."
   },
   {
-   "ja": "カードの絵はそろいました。いまは強さを調整しながら、作者が遊んで試しています。公開はもう少し先ですが、楽しみにしていてください。",
-   "en": "All the card art is in. Right now I’m playtesting and fine-tuning their strength. It’s still a little way off, but I hope you’re looking forward to it."
+   "ja": "パックは、エリア10をクリアするとショップに並びます。今までのカードと混ぜて、自分だけのデッキを組んでみてください。",
+   "en": "Its pack appears in the Shop once you clear Area 10. Mix the new cards with your old favorites and build a deck that’s all yours."
   },
   {
-   "ja": "キャラのイベント「おもちゃの国の腕くらべ」は 11/20（木）までです。トトとテディオンとの対戦はいかがですか？ 感想をお待ちしています。",
-   "en": "The character event “Toyland Showdown” runs until Nov 20 (Thu). How are your battles with Toto and Teddion going? I’d love to hear what you think."
+   "ja": "レギュレーション戦は、11/19（木）から「つぎはぎの宴」（同じ名前のカードは1枚ずつだけ）、11/26（木）から「継ぐ者たち」（第5弾のカードだけ）を開きます。",
+   "en": "Regulation Battles: “Patchwork Feast” (only one copy of each card) opens Nov 19 (Thu), and “The Heirs” (Set 5 cards only) opens Nov 26 (Thu)."
   },
   {
-   "ja": "レギュレーション戦「鉄旗の陣」は 11/11（水）までです。鉄旗の印を9つ集めると、「大樹の旗手」の絵違いカードがもらえます。",
-   "en": "The Regulation Battle “Iron Banner Formation” runs until Nov 11 (Wed). Collect nine Iron Banner Marks to earn an alt-art Great Tree Bannerbearer."
+   "ja": "キャラのイベント「おもちゃの国の腕くらべ」は 11/20（木）までです。トトとテディオンとの対戦の感想も、お待ちしています。",
+   "en": "The character event “Toyland Showdown” runs until Nov 20 (Thu). I’d love to hear how your battles with Toto and Teddion went, too."
   },
   {
-   "ja": "感想や、次に遊びたい決まりは、設定の「ひとこと」から送ってください。",
-   "en": "Tell us how it went, or which rules you’d like next, from Settings → Message."
+   "ja": "感想や、気づいたことは、設定の「ひとこと」から送ってください。",
+   "en": "Send your thoughts or anything you notice from Settings → Message."
   }
  ]
 }
