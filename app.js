@@ -147,6 +147,11 @@
 
   // ---- 更新履歴 ----
   var UPDATES = [
+    ["2026-11-15", "Ver 2.8.1", ["作者の新しいゲームへのアイコン・不具合の修正", "Icon for my new game, and bug fixes"], [
+      ["タイトル画面のいちばん下に、作者の新しいゲーム「ジブンクロニクル」のアイコンを置きました", "There is now an icon at the bottom of the title screen for my new game, “Jibun Chronicle”."],
+      ["パック開封で、めくっている途中に「ぜんぶ見る」を押すとエラーになることがあった不具合を直しました", "Fixed an error that could happen if you pressed “Show all” while cards were still flipping in a pack opening."],
+      ["場が3体埋まっているときの入れ替え召喚で、【断末魔】のトークン（火の粉など）に枠を取られて、出したモンスターが消えることがあった不具合を直しました", "Fixed a monster brought out by a swap summon on a full board sometimes vanishing when a [Last Breath] token (such as Spark) took its slot."],
+    ]],
     ["2026-11-10", "Ver 2.8.0", ["第7弾『おくりびの夜』", "Set 7: Night of the Sending Fires"], [
       ["第7弾『おくりびの夜』を追加しました。倒れたあとに何かを残す【断末魔】のモンスターたち24枚。パックはエリア10をクリアすると、ショップに星屑6で並びます", "Added Set 7, “Night of the Sending Fires”: 24 cards led by monsters whose [Last Breath] leaves something behind. Its pack appears in the Shop for 6 Stardust once you clear Area 10."],
       ["【断末魔】で倒れた枠に出るモンスターは、相手のターンに倒れたときは防御モードで出ます", "Monsters that appear in the fallen monster’s slot through [Last Breath] come out in Defense Mode if it fell during your opponent’s turn."],
