@@ -147,6 +147,10 @@
 
   // ---- 更新履歴 ----
   var UPDATES = [
+    ["2026-11-17", "Ver 2.8.2", ["キャラのイベント第2回「おもちゃの国の夜祭り」", "Character Event #2: “Toyland Night Festival”"], [
+      ["11/21（土）から12/4（金）まで、キャラのイベント第2回「おもちゃの国の夜祭り」を開きます。相手はおもちゃの国のピリカと花火大王ドンドコ。予告は11/18から出ます", "Character Event #2, “Toyland Night Festival”, runs Nov 21 (Sat) – Dec 4 (Fri). You face Pirika of Toyland and Dondoko the Firework King. A preview appears from Nov 18."],
+      ["4つの強さに初めて勝つと、星屑・称号「夜祭りの」・ピリカのアイコン・新しいキャラカード「おもちゃの国のピリカ」がもらえます", "First wins at the four levels earn Stardust, the title “Festival”, a Pirika avatar, and the new character card “Pirika of Toyland”."]
+    ]],
     ["2026-11-15", "Ver 2.8.1", ["作者の新しいゲームへのアイコン・不具合の修正", "Icon for my new game, and bug fixes"], [
       ["タイトル画面のいちばん下に、作者の新しいゲーム「ジブンクロニクル」のアイコンを置きました", "There is now an icon at the bottom of the title screen for my new game, “Jibun Chronicle”."],
       ["パック開封で、めくっている途中に「ぜんぶ見る」を押すとエラーになることがあった不具合を直しました", "Fixed an error that could happen if you pressed “Show all” while cards were still flipping in a pack opening."],
