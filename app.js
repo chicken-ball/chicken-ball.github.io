@@ -147,6 +147,10 @@
 
   // ---- 更新履歴 ----
   var UPDATES = [
+    ["2026-11-19", "Ver 2.8.3", ["カードの不具合の修正", "Card fixes"], [
+      ["「星図の解読」で、選ばなかったカードが山札の底ではなく墓地へ送られていた不具合を直しました（カードの文のとおり、山札の底へ戻ります）", "Fixed “Star Chart” sending the cards you didn’t pick to the graveyard. As the card says, they now go to the bottom of your deck."],
+      ["「星読みのユエ」の文に、選んだカードがそのターン コスト-1 になることと、残りが墓地へ行くことを書き足しました（動きは変わりません）", "“Yue the Stargazer” now says that the chosen card costs 1 less that turn and the rest go to your graveyard. How it works hasn’t changed."]
+    ]],
     ["2026-11-17", "Ver 2.8.2", ["キャラのイベント第2回「おもちゃの国の夜祭り」", "Character Event #2: “Toyland Night Festival”"], [
       ["11/21（土）から12/4（金）まで、キャラのイベント第2回「おもちゃの国の夜祭り」を開きます。相手はおもちゃの国のピリカと花火大王ドンドコ。予告は11/18から出ます", "Character Event #2, “Toyland Night Festival”, runs Nov 21 (Sat) – Dec 4 (Fri). You face Pirika of Toyland and Dondoko the Firework King. A preview appears from Nov 18."],
       ["4つの強さに初めて勝つと、星屑・称号「夜祭りの」・ピリカのアイコン・新しいキャラカード「おもちゃの国のピリカ」がもらえます", "First wins at the four levels earn Stardust, the title “Festival”, a Pirika avatar, and the new character card “Pirika of Toyland”."]
